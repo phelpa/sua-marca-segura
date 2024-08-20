@@ -4,6 +4,7 @@ import { WhatsAppMonocolorIcon } from "./icons/whatsapp-monocolor-icon";
 import { FormPenIcon } from "./icons/form-pen-icon";
 import { SafetyIcon } from "./icons/safety-icon";
 import { CheckedIcon } from "./icons/checked-icon";
+import { EmailForm } from "./components/email-form";
 
 export default function Home() {
   return (
@@ -53,71 +54,24 @@ export default function Home() {
               <div className="text-white text-1xl mb-3 pb-3  ">
                 Tire suas dúvidas entrando em contato conosco
               </div>
-              <form className="text-white">
-                <div className="mb-4">
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Nome
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    htmlFor="whatsapp"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    WhatsApp
-                  </label>
-                  <input
-                    type="whatsapp"
-                    id="whatsapp"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
-                  />
-                </div>
-
-                <div className="mb-4">
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Mensagem
-                  </label>
-                  <textarea
-                    id="message"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
-                    rows={4}
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="bg-[rgb(0,40,80)] text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-colors"
-                >
-                  Enviar
-                </button>
-              </form>
+              <EmailForm />
             </div>
           </div>
         </div>
       </main>
 
-      <div className="text-[color:#676767] text-3xl text-center font-poppins pt-12 pb-8  bg-[color:#f0f8ff]">
+      <div className="text-[color:#676767] text-3xl text-center font-poppins pt-12 pb-8 bg-[color:#f0f8ff]">
         Como funciona
       </div>
-      <div className="flex font-poppins justify-around p-4 pb-16 text-[color:#676767] gap-8 bg-[color:#f0f8ff]">
-        <div className="rounded-md p-6 border border-[color:#676767]  ">
+      <div className="flex font-poppins justify-around p-4 pb-16 text-[color:#676767] gap-8 bg-[color:#f0f8ff] flex-wrap">
+        <div className="rounded-md p-6 border border-[color:#676767] w-[250px]  ">
           <WhatsAppMonocolorIcon fill="#676767" />
           <div className="mt-2 ">
             Clique em entrar em contato e tire suas dúvidas com a gente pelo
             whatsapp
           </div>
         </div>
-        <div className="rounded-md p-6 border border-[color:#676767]  ">
+        <div className="rounded-md p-6 border border-[color:#676767] w-[250px]  ">
           <FormPenIcon fill="#676767" />
           <div className="mt-2">
             Faremos perguntas para entender melhor o seu negócio e sua
@@ -125,20 +79,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="rounded-md p-6 border border-[color:#676767] ">
+        <div className="rounded-md p-6 border border-[color:#676767] w-[250px] ">
           <SafetyIcon fill="#676767" />
           <div className="mt-2">
             Buscaremos a melhor solução para que você tenha a sua marca segura!
           </div>
         </div>
-        <div className="rounded-md p-6 border border-[color:#676767] ">
+        <div className="rounded-md p-6 border border-[color:#676767] w-[250px] ">
           <WhatsAppMonocolorIcon fill="#676767" />
           <div className="mt-2 ">
             Clique em entrar em contato e tire suas dúvidas com a gente pelo
             whatsapp
           </div>
         </div>
-        <div className="rounded-md p-6 border border-[color:#676767] ">
+        <div className="rounded-md p-6 border border-[color:#676767] w-[250px] ">
           <WhatsAppMonocolorIcon fill="#676767" />
           <div className="mt-2 ">
             Faremos perguntas para entender melhor o seu negócio e sua
@@ -151,8 +105,8 @@ export default function Home() {
         Nossos planos
       </div>
 
-      <div className="flex font-poppins justify-around p-4 pb-16 text-[color:#676767] bg-[rgba(133,198,231,0.4)] gap-8">
-        <div className="rounded-md p-6 border bg-white w-[33%]">
+      <div className="flex flex-wrap font-poppins justify-around p-4 pb-16 text-[color:#676767] bg-[rgba(133,198,231,0.4)] gap-8">
+        <div className="rounded-md p-6 border bg-white w-[440px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano 01
           </div>
@@ -193,7 +147,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="rounded-md p-6 border bg-white w-[33%]">
+        <div className="rounded-md p-6 border bg-white w-[440px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano 02
           </div>
@@ -241,7 +195,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="rounded-md p-6 border bg-white w-[33%]">
+        <div className="rounded-md p-6 border bg-white w-[440px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4  pt-1">
             Plano 03
           </div>
