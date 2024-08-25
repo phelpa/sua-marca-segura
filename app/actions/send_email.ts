@@ -1,7 +1,6 @@
 "use server";
 
 import nodemailer from "nodemailer";
-import { revalidatePath } from "next/cache";
 
 type PreviousState = {
   success: boolean;
@@ -12,10 +11,9 @@ export async function sendEmail(
   formData: FormData
 ) {
   const name = formData.get("name");
+  const email = formData.get("email");
   const whatsapp = formData.get("whatsapp");
   const message = formData.get("message");
-
-  console.log({ name, whatsapp, message });
 
   try {
     const transporter = nodemailer.createTransport({
@@ -29,8 +27,8 @@ export async function sendEmail(
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER,
-      subject: "New Contact Form Submission",
-      text: `Name: ${name}\nWhatsApp: ${whatsapp}\nMessage: ${message}`,
+      subject: "Sua marca segura - Contato",
+      text: `Name: ${name}\nWhatsApp: ${whatsapp}\nMessage: ${message} \nEmail: ${email}`,
     };
 
     const info = await transporter.sendMail(mailOptions);

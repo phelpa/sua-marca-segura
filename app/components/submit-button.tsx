@@ -1,8 +1,6 @@
 "use client";
-import { useEffect } from "react";
-import { sendEmail } from "../actions/send_email";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 
 export const SubmitButton = () => {
   const status = useFormStatus();
@@ -10,10 +8,9 @@ export const SubmitButton = () => {
   return (
     <button
       type="submit"
-      className="bg-[rgb(0,40,80)] text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-colors"
+      className="bg-[rgb(0,40,80)] text-white px-6 py-3 rounded-md hover:bg-blue-900 transition-colors text-lg"
     >
-      Enviar
-      {/* {pending ? "Enviando..." : isSuccess ? "Enviado!" : "Enviar"} */}
+      {status.pending ? "Enviando..." : "Enviar"}
     </button>
   );
 };
