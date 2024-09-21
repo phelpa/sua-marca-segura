@@ -11,8 +11,8 @@ export async function sendEmail(
   formData: FormData
 ) {
   const name = formData.get("name");
-  const email = formData.get("email");
   const whatsapp = formData.get("whatsapp");
+  const email = formData.get("email");
   const message = formData.get("message");
 
   try {

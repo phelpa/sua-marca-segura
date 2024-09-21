@@ -27,7 +27,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
           rel="stylesheet"
         />
+        <style>
+          {`html {
+             scroll-behavior: smooth;
+      }`}
+        </style>
       </head>
+
       <body className={inter.className}>{children}</body>
     </html>
   );

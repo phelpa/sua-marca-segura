@@ -3,11 +3,35 @@
 import { sendEmail } from "../actions/send_email";
 import { SubmitButton } from "./submit-button";
 import { useFormState } from "react-dom";
+import { useState } from "react";
 
 export const EmailForm = () => {
   const [state, action] = useFormState(sendEmail, {
     success: false,
   });
+
+  const [emailRequired, setEmailRequired] = useState(true);
+  const [whatsappRequired, setWhatsappRequired] = useState(true);
+
+  const handleInputChange = (e: any) => {
+    const email = e.target.form.email.value.trim();
+    const whatsapp = e.target.form.whatsapp.value.trim();
+
+    if (whatsapp) {
+      setEmailRequired(false);
+      setWhatsappRequired(true);
+      return;
+    }
+
+    if (email) {
+      setWhatsappRequired(false);
+      setEmailRequired(true);
+      return;
+    }
+
+    setEmailRequired(true);
+    setWhatsappRequired(true);
+  };
 
   return (
     <form action={action} method="POST" className="text-white">
@@ -23,22 +47,24 @@ export const EmailForm = () => {
       </div>
       <div className="mb-4">
         <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md text-black placeholder:text-sm placeholder:text-[rgb(0,40,80)]"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <input
           type="text"
           id="whatsapp"
           name="whatsapp"
           placeholder="WhatsApp com DDD"
           className="w-full px-3 py-2 border border-gray-300 rounded-md text-black placeholder:text-sm placeholder:text-[rgb(0,40,80)]"
-          required
+          required={whatsappRequired}
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="mb-4">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md text-black placeholder:text-sm placeholder:text-[rgb(0,40,80)]"
+          required={emailRequired}
+          onChange={handleInputChange}
         />
       </div>
       <div className="mb-4">
