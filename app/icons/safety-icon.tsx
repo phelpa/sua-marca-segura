@@ -3,8 +3,8 @@ export const SafetyIcon = ({ fill = "#FFFFFF" }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill}
-      width="32px"
-      height="32px"
+      width="26px"
+      height="26px"
       viewBox="0 0 1024 1024"
     >
       <path d="M512 64L128 192v384c0 212.1 171.9 384 384 384s384-171.9 384-384V192L512 64zm312 512c0 172.3-139.7 312-312 312S200 748.3 200 576V246l312-110 312 110v330z" />

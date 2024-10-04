@@ -5,6 +5,8 @@ import { FormPenIcon } from "./icons/form-pen-icon";
 import { SafetyIcon } from "./icons/safety-icon";
 import { CheckedIcon } from "./icons/checked-icon";
 import { EmailForm } from "./components/email-form";
+import { BalanceIcon } from "./icons/balance-icon";
+import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
 
 export default function Home() {
   return (
@@ -46,9 +48,9 @@ export default function Home() {
           <ul className="list-disc list-inside  ml-5 text-[color:#0a3e5d] text-2xl mt-16 ">
             <li className="mb-2">Pesquisa de viabilidade da sua marca</li>
             <li className="mb-2">Pedido de registro com advogado</li>
-            <li className="mb-2">Recurso em caso de indeferimento</li>
-            <li className="mb-2">Manutenção da marca por 1 ano</li>
-            <li className="mb-2">Agilidade e suporte ilimitado</li>
+            <li className="mb-2">Recurso em casos específicos</li>
+            <li className="mb-2">Manutenção da marca e suporte</li>
+            <li className="mb-2">Agilidade no atendimento</li>
           </ul>
         </div>
 
@@ -60,7 +62,7 @@ export default function Home() {
                 Quero mais informações
               </div>
               <div className="text-white text-1xl mb-3 pb-3  ">
-                Tire suas dúvidas entrando em contato conosco
+                Tire suas dúvidas entrando em contato
               </div>
               <EmailForm />
             </div>
@@ -78,39 +80,46 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <WhatsAppMonocolorIcon fill="#676767" />
+          <FormPenIcon fill="#676767" />
           <div className="mt-2 ">
-            Clique em entrar em contato e tire suas dúvidas com a gente pelo
-            whatsapp
+            Pesquise se sua marca está disponível e ganhe desconto no plano de
+            registro
           </div>
         </a>
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px]  ">
-          <FormPenIcon fill="#676767" />
+          <BalanceIcon />
           <div className="mt-2">
-            Faremos perguntas para entender melhor o seu negócio e sua
-            necessidade
+            Registro com advogado especializado em propriedade intelectual
           </div>
         </div>
 
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
-          <SafetyIcon fill="#676767" />
+          <MagnifyingGlassIcon />
           <div className="mt-2">
-            Buscaremos a melhor solução para que você tenha a sua marca segura!
+            Acompanhamento de processo e recurso em situações específicas
           </div>
         </div>
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
-          <WhatsAppMonocolorIcon fill="#676767" />
+          <SafetyIcon fill="#676767" />
           <div className="mt-2 ">
-            Clique em entrar em contato e tire suas dúvidas com a gente pelo
-            whatsapp
+            Sua marca registrada com segurança e certificada pelo INPI
           </div>
         </div>
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
-          <WhatsAppMonocolorIcon fill="#676767" />
-          <div className="mt-2 ">
-            Faremos perguntas para entender melhor o seu negócio e sua
-            necessidade
-          </div>
+          {/* <WhatsAppMonocolorIcon fill="#676767" /> */}
+          {/* <img
+            src="https://i.ibb.co/dfmMpT0/image.png"
+            width="24px"
+            height="24px"
+          /> */}
+
+          <img
+            src="  https://i.ibb.co/NyZt231/image.png"
+            width="120px"
+            height="24px"
+          />
+
+          <div className="mt-2 ">Pronto! Futuro do seu negócio garantido</div>
         </div>
       </div>
 
@@ -122,7 +131,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-wrap font-poppins justify-around p-4 pb-16 text-[color:#676767] bg-[rgba(133,198,231,0.4)] gap-8">
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[440px]">
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[320px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano Pesquisa
           </div>
@@ -157,7 +166,7 @@ export default function Home() {
 
           <div className="flex flex-col items-end gap-1 mt-4 items-center">
             <div className="mt-4 text-xl text-[color:#0a3e5d]">
-              {`* Comprando esse plano você terá desconto nos outros`}
+              {`* Comprando a pesquisa você obterá desconto no plano duplo em até 30 dias`}
             </div>
             <a
               href="https://jade-marcas.pay.yampi.com.br/r/4T9AGTU83X"
@@ -171,34 +180,109 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[440px]">
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[320px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano Registro
           </div>
 
           <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
             <span className="text-4xl">R$</span>
-            <span className="text-6xl">889</span>
+            <span className="text-6xl">949</span>
             <span className="text-4xl">,90</span>
           </div>
           <div className="text-center text-[color:#0a3e5d] pt-1">
             em até 12x sem juros de R$74,16
           </div>
 
-          <div className="h-[1px] bg-[color:#3DA4CD] mt-4"></div>
+          <div className="h-[1px] bg-[color:#3DA4CD]"></div>
+
           <div className="text-center text-[color:#3DA4CD] p-3 font-bold">
-            R$600,00 se você já pagou pelo plano pesquisa
+            Plano sem pesquisa
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] mb-5"></div>
 
           <div className="flex items-end gap-1">
-            <div className="mt-2">Tudo do plano pesquisa +</div>
+            <CheckedIcon />
+            <div className="mt-2">Pedido de Registro</div>
           </div>
 
           <div className="flex items-end gap-1">
             <CheckedIcon />
-            <div className="mt-2">2 anos de Acompanhamento e Vigilância </div>
+            <div className="mt-2">Acompanhamento por 1 ano</div>
+          </div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Recursos necessários</div>
+          </div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Atualizações semanais</div>
+          </div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Certificação da marca</div>
+          </div>
+
+          <div className="flex flex-col items-end gap-1 mt-4 items-center">
+            <a
+              href="https://jade-marcas.pay.yampi.com.br/r/4T9AGTU83X"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300">
+                Comprar
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[320px]">
+          <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
+            Plano Duplo
+          </div>
+
+          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
+            <span className="text-4xl">R$</span>
+            <span className="text-6xl ">1129</span>
+            <span className="text-4xl">,80</span>
+          </div>
+          <div className="text-center text-[color:#0a3e5d] pt-1">
+            em até 12x sem juros de R$24,16
+          </div>
+
+          {/* <div className="h-[1px] bg-[color:#3DA4CD] m-5"></div> */}
+
+          {/* <div className="text-center text-[color:#3DA4CD] p-3 font-bold">
+            R$949,50 se você já pagou pelo plano pesquisa
+          </div> */}
+
+          <div className="h-[1px] bg-[color:#3DA4CD] "></div>
+
+          <div className="text-center text-[color:#3DA4CD] p-3 font-bold">
+            A pesquisa fica por R$ 190,00 nesse plano
+          </div>
+
+          <div className="h-[1px] bg-[color:#3DA4CD] "></div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">
+              Pesquisa ilimitada de viabilidade de marca
+            </div>
+          </div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Identificação de classificação</div>
+          </div>
+
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Relatório com resultado das pesquisas</div>
           </div>
 
           <div className="flex items-end gap-1">
@@ -206,62 +290,39 @@ export default function Home() {
             <div className="mt-2">Pedido de Registro</div>
           </div>
 
-          <div className="flex items-end gap-1 mb-4">
-            <CheckedIcon />
-            <div className="mt-2">Garantia do Registro</div>
-          </div>
-          <a
-            href="https://jade-marcas.pay.yampi.com.br/r/4T9AGTU83X"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[color:#3DA4CD] underline "
-          >
-            Compre o plano pesquisa para pesquisarmos a viabilidade da sua marca
-          </a>
-        </div>
-
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[440px]">
-          <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4  pt-1">
-            Plano Monitoramento
-          </div>
-
-          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
-            <span className="text-4xl">R$</span>
-            <span className="text-6xl">1239</span>
-            <span className="text-4xl">,90</span>
-          </div>
-          <div className="text-center text-[color:#0a3e5d]">
-            em até 12x sem juros de R$103,33
-          </div>
-
-          <div className="h-[1px] bg-[color:#3DA4CD] mt-4"></div>
-          <div className="text-center text-[color:#3DA4CD] p-3 font-bold">
-            R$950,00 se você já pagou pelo plano pesquisa
-          </div>
-          <div className="h-[1px] bg-[color:#3DA4CD] mb-5"></div>
-
           <div className="flex items-end gap-1">
-            <div className="mt-2">Tudo do plano 02 +</div>
+            <CheckedIcon />
+            <div className="mt-2">Atualizações semanais</div>
           </div>
 
           <div className="flex items-end gap-1">
             <CheckedIcon />
-            <div className="mt-2">Recursos ilimitados</div>
+            <div className="mt-2">Acompanhamento por 1 ano</div>
           </div>
 
-          <div className="flex items-end gap-1 mb-4">
+          <div className="flex items-end gap-1">
             <CheckedIcon />
-            <div className="mt-2">Todos atos no INPI ilimitados</div>
+            <div className="mt-2">Recursos necessários </div>
           </div>
 
-          <a
-            href="https://jade-marcas.pay.yampi.com.br/r/4T9AGTU83X"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[color:#3DA4CD] underline  "
-          >
-            Compre o plano pesquisa para pesquisarmos a viabilidade da sua marca
-          </a>
+          <div className="flex items-end gap-1">
+            <CheckedIcon />
+            <div className="mt-2">Certificação da marca</div>
+          </div>
+          <div className="flex flex-col items-end gap-1 mt-4 items-center">
+            {/* <div className="mt-4 text-xl text-[color:#0a3e5d]">
+              {`* Comprando esse plano você terá desconto nos outros`}
+            </div> */}
+            <a
+              href="https://jade-marcas.pay.yampi.com.br/r/4T9AGTU83X"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300">
+                Comprar
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
