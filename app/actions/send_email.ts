@@ -27,7 +27,7 @@ export async function sendEmail(
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER,
-      subject: "Sua marca segura - Contato",
+      subject: "Jade Marcas - Contato",
       text: `Name: ${name}\nWhatsApp: ${whatsapp}\nMessage: ${message} \nEmail: ${email}`,
     };
 
