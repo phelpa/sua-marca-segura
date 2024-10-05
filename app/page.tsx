@@ -74,35 +74,35 @@ export default function Home() {
       <div className="text-[color:#676767] text-3xl text-center font-poppins pt-12 pb-8 bg-[color:#f0f8ff]">
         Como funciona
       </div>
-      <div className="flex font-poppins justify-around p-4 pb-16 text-[color:#676767] gap-8 bg-[color:#f0f8ff] flex-wrap">
-        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px]">
+      <div className="flex font-poppins justify-around p-4 pb-16 text-[color:#676767] gap-3 bg-[color:#f0f8ff] flex-wrap">
+        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px]">
           <FormPenIcon fill="#676767" />
           <div className="mt-2 ">
             Pesquise se sua marca está disponível e ganhe desconto no plano
             duplo
           </div>
         </div>
-        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px]  ">
+        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px]  ">
           <BalanceIcon />
           <div className="mt-2">
             Registro com advogado especializado em propriedade intelectual
           </div>
         </div>
 
-        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
+        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
           <MagnifyingGlassIcon />
           <div className="mt-2">
             Acompanhamento do processo e recursos em situações específicas
           </div>
         </div>
 
-        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
+        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
           <SafetyIcon fill="#676767" />
           <div className="mt-2 ">
             Sua marca registrada com segurança e certificada pelo INPI
           </div>
         </div>
-        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[250px] ">
+        <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
           <Image
             src="/jademarcas.svg"
             alt="Jade Marcas Icon"
@@ -122,8 +122,8 @@ export default function Home() {
         Nossos planos
       </div>
 
-      <div className="flex flex-wrap font-poppins justify-around p-4 pb-16 text-[color:#676767] bg-[rgba(133,198,231,0.4)] gap-8">
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[430px] relative">
+      <div className="flex flex-wrap font-poppins justify-around p-4 pb-16 text-[color:#676767] bg-[rgba(133,198,231,0.4)] gap-4">
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[400px] relative">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano Pesquisa
           </div>
@@ -174,7 +174,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[430px] relative">
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[400px] relative">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano Registro
           </div>
@@ -234,14 +234,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="shadow-lg rounded-md p-6 border bg-white w-[430px]">
+        <div className="shadow-lg rounded-md p-6 border bg-white w-[400px]">
           <div className="mt-2 text-center text-[color:#0a3e5d] text-2xl mb-4">
             Plano Duplo
           </div>
 
           <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
             <span className="text-4xl">R$</span>
-            <span className="text-6xl ">1129</span>
+            <span className="text-6xl ">1139</span>
             <span className="text-4xl">,80</span>
           </div>
           <div className="text-center text-[color:#0a3e5d] pt-1">
