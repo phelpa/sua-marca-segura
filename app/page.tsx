@@ -22,7 +22,7 @@ export default function Home() {
         />
         <a
           href="#nossos-planos"
-          className="flex gap-8 border-2 border-white p-2 rounded-xl mr-18 mr-6"
+          className="flex gap-8 border-2 border-white p-2 rounded-xl mr-18 mr-6 ml-4"
         >
           <div className="hover:underline">Preços e Planos</div>
         </a>
