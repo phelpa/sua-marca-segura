@@ -241,11 +241,11 @@ export default function Home() {
 
           <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
             <span className="text-4xl">R$</span>
-            <span className="text-6xl ">1139</span>
-            <span className="text-4xl">,80</span>
+            <span className="text-6xl">1139</span>
+            <span className="text-4xl">,90</span>
           </div>
           <div className="text-center text-[color:#0a3e5d] pt-1">
-            em até 12x sem juros de R$94,16
+            em até 12x sem juros de R$94,99
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] mt-2"></div>
