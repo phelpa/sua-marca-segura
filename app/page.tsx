@@ -6,12 +6,16 @@ import { CheckedIcon } from "./icons/checked-icon";
 import { EmailForm } from "./components/email-form";
 import { BalanceIcon } from "./icons/balance-icon";
 import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
-
+import { jsonLd } from "./layout";
 const textWhatsApp =
   "Ol%C3%A1%2C%20gostaria%20de%20ajuda%20para%20registrar%20a%20minha%20marca";
 export default function Home() {
   return (
     <div className="text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="bg-[#3DA4CD] flex pt-8 flex justify-between">
         <Image
           src="/jademarcas.svg"
