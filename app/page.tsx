@@ -6,7 +6,53 @@ import { CheckedIcon } from "./icons/checked-icon";
 import { EmailForm } from "./components/email-form";
 import { BalanceIcon } from "./icons/balance-icon";
 import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
-import { jsonLd } from "./layout";
+import { keywords } from "./components/keywords";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.jademarcas.com",
+  },
+  headline: "Jade Marcas - Registro de Marcas",
+  description:
+    "Registre a sua marca com o serviço especializado da Jade Marcas. Oferecemos suporte completo no processo de registro de marca.",
+  image: "https://www.jademarcas.com/jademarcas.svg",
+  dateCreated: "2024-10-10T08:00:00-03:00",
+  datePublished: "2024-10-10T08:00:00-03:00",
+  dateModified: "2024-10-10T08:00:00-03:00",
+  author: {
+    "@type": "Organization",
+    name: "Jade Marcas",
+    url: "https://www.jademarcas.com",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Jade Marcas",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.jademarcas.com/jademarcas.svg",
+      width: 300,
+      height: 60,
+    },
+  },
+  inLanguage: "pt-BR",
+  isFamilyFriendly: "true",
+  wordCount: "1200",
+  commentCount: "10",
+  keywords,
+  articleSection: "Negócios",
+  citation: "https://www.jademarcas.com",
+  accessibilitySummary:
+    "Esta página mostra como funciona o registro de uma marca e oferece um serviço para o registro.",
+  genre: "Guia",
+  about: {
+    "@type": "Thing",
+    name: "Registro de Marcas",
+  },
+};
+
 const textWhatsApp =
   "Ol%C3%A1%2C%20gostaria%20de%20ajuda%20para%20registrar%20a%20minha%20marca";
 export default function Home() {
