@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { WhatsAppIcon } from "./icons/whatsapp-icon";
 import { FormPenIcon } from "./icons/form-pen-icon";
 import { SafetyIcon } from "./icons/safety-icon";
 import { CheckedIcon } from "./icons/checked-icon";
-import { EmailForm } from "./components/email-form";
 import { BalanceIcon } from "./icons/balance-icon";
 import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
 import { keywords } from "./components/keywords";
+import { JadeCheckedIcon } from "./icons/jade-checked-icon";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -79,46 +78,62 @@ export default function Home() {
       </div>
       <main className="flex flex-wrap font-poppins bg-[#3DA4CD] justify-around pt-12 pb-12 pl-4 pr-4 gap-24">
         <div className="bg-[#3DA4CD]">
-          <h1 className="text-6xl font-bold mb-4 text-white">
-            Registre sua marca
+          <h1 className="text-4xl font-bold mb-2 text-white text-center">
+            A segurança do seu negócio começa com uma marca registrada
           </h1>
-          <h2 className="text-3xl mb-2 text-white ">
-            E garanta o futuro dos seus negócios
+          <h2 className="text-3xl mb-12 text-center text-white">
+            Durma tranquilo sabendo que está protegido.{" "}
           </h2>
 
-          <div className="flex mt-12 gap-16 mt-12">
-            <div className="flex flex-col gap-4">
-              <a
-                href={`https://wa.me/5515991349679?text=${textWhatsApp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-[rgb(0,40,80)] px-6 py-2 rounded-md hover:bg-blue-900 transition-colors mt-4"
-              >
-                <div className="flex items-center gap-2 p-1">
-                  <div>Entrar em contato</div>
-                  <WhatsAppIcon />
-                </div>
-              </a>
+          <div className="flex gap-6 justify-center">
+            <div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Lançamento de produtos com segurança
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Selo de loja oficial no mercado livre
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Benefícios em marketplaces como amazon
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Exclusividade de uso em todo território nacional
+              </div>
+            </div>
+
+            <div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Prevenção de conflitos judiciais
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Proteção contra uso não autorizado
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Facilidade em resolver disputas online
+              </div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Controle total da sua marca
+              </div>
             </div>
           </div>
-
-          <ul className="list-disc list-inside  ml-5 text-[color:#0a3e5d] text-2xl mt-16 ">
-            <li className="mb-2">Pesquisa de viabilidade da sua marca</li>
-            <li className="mb-2">Pedido de registro com advogado</li>
-            <li className="mb-2">Recursos em casos específicos</li>
-            <li className="mb-2">Manutenção da marca e suporte</li>
-            <li className="mb-2">Agilidade no atendimento</li>
-          </ul>
         </div>
 
         {/*FORM */}
-        <div className="shadow-lg rounded-md p-12 w-full max-w-md bg-[#0F4C70] text-[#287EAF] border border-[color:#0F4C70]">
+        {/* <div className="shadow-lg rounded-md p-12 w-full max-w-md bg-[#0F4C70] text-[#287EAF] border border-[color:#0F4C70]">
           <div className="text-white text-2xl pb-2">Quero mais informações</div>
           <div className="text-white text-1xl mb-3 pb-3  ">
             Tire suas dúvidas entrando em contato
           </div>
           <EmailForm />
-        </div>
+        </div> */}
       </main>
 
       <div className="text-[color:#676767] text-3xl text-center font-poppins pt-12 pb-8 bg-[color:#f0f8ff]">
