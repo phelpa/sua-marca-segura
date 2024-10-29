@@ -6,6 +6,7 @@ import { BalanceIcon } from "./icons/balance-icon";
 import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
 import { keywords } from "./components/keywords";
 import { JadeCheckedIcon } from "./icons/jade-checked-icon";
+import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -53,7 +54,10 @@ const jsonLd = {
 };
 
 const textWhatsApp =
-  "Ol%C3%A1%2C%20gostaria%20de%20ajuda%20para%20registrar%20a%20minha%20marca";
+  "Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20benef%C3%ADcios%20em%20ter%20uma%20marca%20registrada";
+
+const sendToWhatsApp = `https://wa.me/5515991349679?text=${textWhatsApp}`;
+
 export default function Home() {
   return (
     <div className="text-white">
@@ -125,6 +129,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <a
+          className="fixed right-0 translate-x-[-2rem] bottom-[1.4rem] bg-[#1faf38] px-3 py-1.5 rounded-full transition-all duration-300 z-10 flex justify-center items-center gap-2"
+          target="_blank"
+          href={sendToWhatsApp}
+        >
+          <WhatsAppIcon />
+          <span>Precisa de ajuda?</span>
+        </a>
 
         {/*FORM */}
         {/* <div className="shadow-lg rounded-md p-12 w-full max-w-md bg-[#0F4C70] text-[#287EAF] border border-[color:#0F4C70]">
