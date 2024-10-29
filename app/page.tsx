@@ -85,8 +85,12 @@ export default function Home() {
             Durma tranquilo sabendo que está protegido.{" "}
           </h2>
 
-          <div className="flex gap-6 justify-center">
+          <div className="flex gap-6 justify-center flex-wrap">
             <div>
+              <div className="flex gap-2 text-black text-xl p-1">
+                <JadeCheckedIcon />
+                Válido por 10 anos em todo território nacional
+              </div>
               <div className="flex gap-2 text-black text-xl p-1">
                 <JadeCheckedIcon />
                 Lançamento de produtos com segurança
@@ -98,10 +102,6 @@ export default function Home() {
               <div className="flex gap-2 text-black text-xl p-1">
                 <JadeCheckedIcon />
                 Benefícios em marketplaces como amazon
-              </div>
-              <div className="flex gap-2 text-black text-xl p-1">
-                <JadeCheckedIcon />
-                Exclusividade de uso em todo território nacional
               </div>
             </div>
 
@@ -143,28 +143,29 @@ export default function Home() {
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px]">
           <FormPenIcon fill="#676767" />
           <div className="mt-2 ">
-            Pesquise se sua marca está disponível e ganhe desconto no plano
-            duplo
+            Pesquisaremos se sua marca está disponível para registro
           </div>
         </div>
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px]  ">
           <BalanceIcon />
           <div className="mt-2">
-            Registro com advogado especializado em propriedade intelectual
+            Faremos o registro com um advogado especializado em propriedade
+            intelectual
           </div>
         </div>
 
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
           <MagnifyingGlassIcon />
           <div className="mt-2">
-            Acompanhamento do processo e recursos em situações específicas
+            Acompanharemos o processo e entraremos com recursos em situações
+            específicas
           </div>
         </div>
 
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
           <SafetyIcon fill="#676767" />
           <div className="mt-2 ">
-            Sua marca registrada com segurança e certificada pelo INPI
+            Depois disso, sua marca estará registrada e certificada pelo INPI
           </div>
         </div>
         <div className="shadow-lg rounded-md p-6 border border-[color:#676767] w-[240px] ">
@@ -194,12 +195,10 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
+            <span className="text-4xl pr-3">6x de </span>
             <span className="text-4xl">R$</span>
-            <span className="text-6xl ">289</span>
-            <span className="text-4xl">,90</span>
-          </div>
-          <div className="text-center text-[color:#0a3e5d] pt-1">
-            em até 12x sem juros de R$24,16
+            <span className="text-4xl "> 48</span>
+            <span className="text-4xl">,32</span>
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] m-5"></div>
@@ -244,13 +243,11 @@ export default function Home() {
             Plano Registro
           </div>
 
-          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
+          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold mb-6">
+            <span className="text-4xl pr-3">12x de </span>
             <span className="text-4xl">R$</span>
-            <span className="text-6xl">949</span>
-            <span className="text-4xl">,90</span>
-          </div>
-          <div className="text-center text-[color:#0a3e5d] pt-1">
-            em até 12x sem juros de R$79,16
+            <span className="text-4xl "> 79</span>
+            <span className="text-4xl">,16</span>
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] mt-2"></div>
@@ -304,19 +301,17 @@ export default function Home() {
             Plano Duplo
           </div>
 
-          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold ">
+          <div className="flex justify-center items-end text-[color:#3DA4CD] items-end font-semibold mb-6">
+            <span className="text-4xl pr-3">12x de </span>
             <span className="text-4xl">R$</span>
-            <span className="text-6xl">1139</span>
-            <span className="text-4xl">,90</span>
-          </div>
-          <div className="text-center text-[color:#0a3e5d] pt-1">
-            em até 12x sem juros de R$94,99
+            <span className="text-4xl "> 94</span>
+            <span className="text-4xl">,99</span>
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] mt-2"></div>
 
           <div className="text-center text-[color:#3DA4CD] p-3 font-bold">
-            A pesquisa fica por R$ 190,00 nesse plano
+            Plano com desconto na pesquisa
           </div>
 
           <div className="h-[1px] bg-[color:#3DA4CD] mb-5"></div>
