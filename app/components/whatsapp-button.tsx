@@ -20,7 +20,7 @@ export const WhatsappButton = () => {
       }}
     >
       <WhatsAppIcon />
-      <span>Precisa de ajuda?</span>
+      <span>Converse com a gente</span>
     </a>
   );
 };
