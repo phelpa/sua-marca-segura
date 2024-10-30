@@ -17,7 +17,7 @@ export function BuyButton({ href }: BuyButtonProps) {
       <button
         className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300"
         onClick={() => {
-          fbq("track", "AddToCart");
+          fbq("track", "Purchase");
         }}
       >
         Comprar
