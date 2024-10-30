@@ -348,12 +348,21 @@ export default function Home() {
 
       <footer className="bg-[#0F4C70] p-6 text-white ">
         <div className="flex justify-between mb-16 flex-wrap">
-          <Image
-            src="/jademarcas2.svg"
-            alt="Jade Marcas Icon"
-            width={260}
-            height={90}
-          />
+          <div>
+            <Image
+              src="/jademarcas2.svg"
+              alt="Jade Marcas Icon"
+              width={260}
+              height={90}
+              className="mb-2"
+            />
+
+            <div className="text-sm italic">
+              &ldquo;Acaso, haveria alguma coisa maravilhosíssima para
+              mim?&rdquo; Jeremias 32:27
+            </div>
+          </div>
+
           <div>© 2024 por Jade Marcas - Todos os direitos reservados.</div>
         </div>
         <div className="flex flex-wrap justify-between mb-16">
