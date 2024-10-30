@@ -6,7 +6,9 @@ import { BalanceIcon } from "./icons/balance-icon";
 import { MagnifyingGlassIcon } from "./icons/magnifying-glass-icon";
 import { keywords } from "./components/keywords";
 import { JadeCheckedIcon } from "./icons/jade-checked-icon";
-import { WhatsAppIcon } from "./icons/whatsapp-icon";
+import { BuyButton } from "./components/buy-button";
+import { BuyButton2 } from "./components/buy-button2";
+import { WhatsappButton } from "./components/whatsapp-button";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -52,11 +54,6 @@ const jsonLd = {
     name: "Registro de Marcas",
   },
 };
-
-const textWhatsApp =
-  "Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20benef%C3%ADcios%20em%20ter%20uma%20marca%20registrada";
-
-const sendToWhatsApp = `https://wa.me/5515991349679?text=${textWhatsApp}`;
 
 export default function Home() {
   return (
@@ -130,14 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-        <a
-          className="fixed right-0 translate-x-[-2rem] bottom-[1.4rem] bg-[#1faf38] px-3 py-1.5 rounded-full transition-all duration-300 z-10 flex justify-center items-center gap-2"
-          target="_blank"
-          href={sendToWhatsApp}
-        >
-          <WhatsAppIcon />
-          <span>Precisa de ajuda?</span>
-        </a>
+        <WhatsappButton />
 
         {/*FORM */}
         {/* <div className="shadow-lg rounded-md p-12 w-full max-w-md bg-[#0F4C70] text-[#287EAF] border border-[color:#0F4C70]">
@@ -238,17 +228,7 @@ export default function Home() {
               {`* Comprando a pesquisa você obterá desconto no plano duplo em até 30 dias`}
             </div>
           </div>
-          <a
-            href="https://jade-marcas.pay.yampi.com.br/r/O0JC5LDD9Y"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-0 mb-4"
-            style={{ left: "50%", transform: "translateX(-50%)" }}
-          >
-            <button className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300">
-              Comprar
-            </button>
-          </a>
+          <BuyButton href="https://jade-marcas.pay.yampi.com.br/r/O0JC5LDD9Y" />
         </div>
 
         <div className="shadow-lg rounded-md p-6 border bg-white w-[400px] relative">
@@ -295,17 +275,7 @@ export default function Home() {
             <div className="mt-2">Certificação da marca</div>
           </div>
           <div style={{ display: "flex", margin: "auto" }}>
-            <a
-              href="https://jade-marcas.pay.yampi.com.br/r/TU1ZPZWXG3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-0 mb-4"
-              style={{ left: "50%", transform: "translateX(-50%)" }}
-            >
-              <button className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300">
-                Comprar
-              </button>
-            </a>
+            <BuyButton href="https://jade-marcas.pay.yampi.com.br/r/TU1ZPZWXG3" />
           </div>
         </div>
 
@@ -371,15 +341,7 @@ export default function Home() {
             <div className="mt-2">Certificação da marca</div>
           </div>
           <div className="flex flex-col items-end gap-1 mt-4 items-center">
-            <a
-              href="https://jade-marcas.pay.yampi.com.br/r/180JRPOZYR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="mt-4 px-6 py-3 text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300">
-                Comprar
-              </button>
-            </a>
+            <BuyButton2 />
           </div>
         </div>
       </div>
