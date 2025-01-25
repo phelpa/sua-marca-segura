@@ -48,13 +48,13 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <div className="text-white bg-neutral-900 h-screen p-16">
+    <div className="text-white bg-neutral-900 min-h-screen p-8 sm:p-12 lg:p-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="flex justify-between p-8">
-        <div className="flex flex-col gap-8">
+      <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-12">
+        <div className="flex flex-col gap-8 w-full lg:w-2/5 text-center lg:text-left items-center lg:items-start">
           <div>
             <Image
               src="/jademarcas2.svg"
@@ -64,21 +64,24 @@ export default function Home() {
               className="mb-2"
             />
           </div>
-          <h2 className="text-5xl w-4/5 mt-8">
+          <h2 className="text-4xl sm:text-5xl w-full lg:w-4/5 mt-4">
             A partir de agora, a sua empresa realmente vai te pertencer
           </h2>
-          <h2 className="text-3xl w-4/5 mt-8 text-white/75">
+          <h2 className="text-2xl sm:text-3xl w-full lg:w-4/5 mt-4 text-white/75">
             Proteja seu negócio garantindo a exclusividade do nome que você
             escolheu e construa uma base sólida para o futuro da sua empresa
           </h2>
         </div>
-        <Image
-          src="/jademarcas.png"
-          alt="jade marcas advogada"
-          width={500}
-          height={500}
-          className="w-[500px] h-[500px] object-cover"
-        />
+
+        <div className="flex justify-center w-full lg:w-2/5">
+          <Image
+            src="/jademarcas.png"
+            alt="jade marcas advogada"
+            width={500}
+            height={500}
+            className="w-[300px] sm:w-[400px] lg:w-[500px] h-auto object-cover"
+          />
+        </div>
       </div>
     </div>
   );
