@@ -73,6 +73,14 @@ export default function Home() {
               escolheu e construa uma base sólida para o futuro da sua empresa
             </h2>
           </div>
+
+          <Image
+            src="/jade2.png"
+            alt="Jade Marcas Icon"
+            width={400}
+            height={180}
+            className="mb-2"
+          />
         </div>
 
         <div className="flex justify-center items-center flex-col gap-16 mt-16">
@@ -93,7 +101,7 @@ export default function Home() {
             />
             <div className="flex flex-col gap-6 ">
               <div className="text-3xl">
-                <span className="text-[#52edb3]">|</span> Sem problema com a
+                <span className="text-[#52edb3]">|</span> Sem problemas com a
                 justiça
               </div>
               <div className="text-2xl text-white/75">
@@ -110,8 +118,8 @@ export default function Home() {
                 retrabalhos
               </div>
               <div className="text-2xl text-white/75">
-                Também evita que você tenha ter que refazer todo trabalho de
-                divulgação caso alguém registre a sua marca antes de você
+                Também evita que você tenha ter que recomeçar do zero caso
+                alguém registre a sua marca antes de você
               </div>
             </div>
             <Image
@@ -143,20 +151,24 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-3xl mt-16 mb-16">
+        <div className="text-3xl mt-16 mb-12">
           <span className="text-[#52edb3] mr-3">|</span>IMPORTÂNCIA DO REGISTRO
           DA MARCA
         </div>
-        <div className="text-2xl mb-6 font-light">
-          Ter uma marca sem registro é como ter um carro de alto valor sem
-          seguro: parece um bom negócio até que algo inesperado aconteça.
+        <div className="text-xl mb-6 font-light">
+          Sua marca pode se tornar um dos seus maiores ativos, mas para isso, o
+          primeiro passo é registrá-la. O registro garante que todo o seu
+          esforço e crescimento estejam protegidos, evitando riscos e
+          imprevistos.
         </div>
-        <div className="text-2xl font-light">
-          O registro da marca não apenas protege contra riscos, mas também
-          valoriza o seu negócio, aumentando a credibilidade e o
-          profissionalismo. Uma marca protegida se destaca da concorrência e
-          abre novas oportunidades de crescimento. Sem essa proteção, sua marca
-          é um acidente esperando para acontecer.
+
+        <div className="text-xl mb-6 font-light">
+          Com a marca protegida, seu negócio ganha mais valor, credibilidade e
+          profissionalismo. Sem essa segurança, você pode acabar perdendo tudo o
+          que construiu.
+        </div>
+        <div className="text-xl font-light">
+          Registrar a marca não é caro, caro é ter que recomeçar do zero.
         </div>
       </div>
     </div>
