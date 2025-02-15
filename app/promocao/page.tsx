@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { keywords } from "../components/keywords";
+import { XIcon } from "../icons/x-icon";
+import { JadeCheckedIcon } from "../icons/jade-checked-icon";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -90,7 +92,7 @@ export default function Home() {
           </div>
           <div className="lg:w-2/5 text-2xl text-center text-white/75">
             Uma falha na proteção da sua marca pode abrir espaço para imitações,
-            disputas legais e prejuízos
+            disputas judiciais e prejuízos
           </div>
           <div className="flex gap-12 lg:w-3/5 p-6 bg-gray-900 border border-gray-500">
             <Image
@@ -118,8 +120,8 @@ export default function Home() {
                 retrabalhos
               </div>
               <div className="text-2xl text-white/75">
-                Também evita que você tenha ter que recomeçar do zero caso
-                alguém registre a sua marca antes de você
+                Também evita que você tenha que recomeçar do zero caso alguém
+                registre a sua marca antes de você
               </div>
             </div>
             <Image
@@ -169,6 +171,89 @@ export default function Home() {
         </div>
         <div className="text-xl font-light">
           Registrar a marca não é caro, caro é ter que recomeçar do zero.
+        </div>
+      </div>
+
+      <div className="text-3xl mt-16 mb-12">
+        <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
+      </div>
+      <div className="flex flex-wrap justify-center gap-32">
+        <div>
+          <Image
+            src="/infinitygesso3.png"
+            width={200}
+            height={100}
+            alt="infinity gesso marca"
+          />
+        </div>
+        <div>
+          <Image
+            src="/senhortorta.png"
+            width={200}
+            height={200}
+            alt="senhor torta marca"
+          />
+        </div>
+        <div>
+          <Image
+            src="/castelewear.png"
+            width={200}
+            height={200}
+            alt="castele wear marca"
+          />
+        </div>
+        <div>
+          <Image src="/west3.png" width={200} height={200} alt="west marca" />
+        </div>
+      </div>
+      <div className="flex justify-center mt-16 mb-4">
+        <div className="text-center text-4xl font-medium">
+          Registrar a marca não é opcional.
+        </div>
+      </div>
+
+      <div className=" text-2xl text-center text-white/75 mb-8">
+        É a única forma de garantir sua exclusividade e proteção.
+      </div>
+
+      <div className="flex justify-center items-center gap-16">
+        <div className="border border-gray-700 rounded-lg">
+          <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-red-700 text-center">
+            MARCA SEM REGISTRO
+          </div>
+          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl">
+            <div className="flex gap-2 items-center">
+              <XIcon />
+              <div>Sem garantia de exclusividade</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <XIcon />
+              <div>Risco de perder a marca</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <XIcon />
+              <div>Falta de credibilidade</div>
+            </div>
+          </div>
+        </div>
+        <div className="border border-gray-700 rounded-lg">
+          <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-green-700 text-center">
+            MARCA COM REGISTRO
+          </div>
+          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl">
+            <div className="flex gap-2 items-center">
+              <JadeCheckedIcon />
+              <div>Exclusividade da marca por 10 anos</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <JadeCheckedIcon />
+              <div>Marca protegida legalmente</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <JadeCheckedIcon />
+              <div>Credibilidade total da marca</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
