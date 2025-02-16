@@ -76,13 +76,20 @@ export default function Home() {
             </h2>
           </div>
 
-          <Image
-            src="/jade2.png"
-            alt="Jade Marcas Icon"
-            width={400}
-            height={180}
-            className="mb-2"
-          />
+          <div
+            style={{
+              background:
+                "radial-gradient(circle closest-side, #0d6b48 10%, rgb(3, 7, 18) 100%)",
+            }}
+          >
+            <Image
+              src="/jademelhorada.png"
+              alt="Jade Helpa, a advogada da Jade Marcas"
+              width={420}
+              height={220}
+              className="mb-2"
+            />
+          </div>
         </div>
 
         <div className="flex justify-center items-center flex-col gap-16 mt-16">
