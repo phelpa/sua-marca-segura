@@ -183,7 +183,7 @@ export default function Home() {
       <div className="text-3xl mt-16 mb-12">
         <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
       </div>
-      <div className="flex flex-wrap justify-center gap-32">
+      <div className="flex flex-wrap justify-center gap-28">
         <div>
           <Image
             src="/infinitygesso3.png"
@@ -311,7 +311,7 @@ export default function Home() {
                 <JadeCheckedIcon />
               </div>
               <div className="font-light">
-                Acesso ao selo de marca registrada no mercado livre
+                Acesso ao selo de marca registrada no Mercado Livre
               </div>
             </div>
           </div>
