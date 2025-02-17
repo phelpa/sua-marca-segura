@@ -180,7 +180,6 @@ export default function Home() {
           Registrar a marca não é caro, caro é ter que recomeçar do zero.
         </div>
       </div>
-
       <div className="text-3xl mt-16 mb-12">
         <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
       </div>
@@ -218,47 +217,102 @@ export default function Home() {
           Registrar a marca não é opcional.
         </div>
       </div>
-
       <div className=" text-2xl text-center text-white/75 mb-8">
         É a única forma de garantir sua exclusividade e proteção.
       </div>
-
       <div className="flex justify-center items-center gap-16">
-        <div className="border border-gray-700 rounded-lg">
+        {/* Unregistered Brand Card */}
+        <div className="border border-gray-700 rounded-lg w-[500px]">
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-red-700 text-center">
             MARCA SEM REGISTRO
           </div>
-          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl">
+          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl min-h-[400px]">
             <div className="flex gap-2 items-center">
-              <XIcon />
-              <div>Sem garantia de exclusividade</div>
+              <div>
+                <XIcon />
+              </div>
+              <div className="font-light">Sem garantia de exclusividade</div>
             </div>
             <div className="flex gap-2 items-center">
-              <XIcon />
-              <div>Risco de perder a marca</div>
+              <div>
+                <XIcon />
+              </div>
+              <div className="font-light">Risco de perder a marca</div>
             </div>
             <div className="flex gap-2 items-center">
-              <XIcon />
-              <div>Falta de credibilidade</div>
+              <div>
+                <XIcon />
+              </div>
+              <div className="font-light">Falta de credibilidade</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <div>
+                <XIcon />
+              </div>
+              <div className="font-light">Risco de processos judiciais</div>
+            </div>
+
+            <div className="flex gap-2 items-center">
+              <div>
+                <XIcon />
+              </div>
+              <div className="font-light">
+                Problemas para registrar domínio e redes sociais
+              </div>
             </div>
           </div>
         </div>
-        <div className="border border-gray-700 rounded-lg">
+
+        {/* Registered Brand Card */}
+        <div className="border border-gray-700 rounded-lg w-[500px]">
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-green-700 text-center">
             MARCA COM REGISTRO
           </div>
-          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl">
+          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl min-h-[400px]">
             <div className="flex gap-2 items-center">
-              <JadeCheckedIcon />
-              <div>Exclusividade da marca por 10 anos</div>
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">
+                Exclusividade da marca por 10 anos, com possibilidade de
+                renovação
+              </div>
             </div>
             <div className="flex gap-2 items-center">
-              <JadeCheckedIcon />
-              <div>Marca protegida legalmente</div>
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">Proteção legal garantida</div>
             </div>
             <div className="flex gap-2 items-center">
-              <JadeCheckedIcon />
-              <div>Credibilidade total da marca</div>
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">
+                Maior credibilidade e valor de mercado
+              </div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">
+                Segurança para expandir seu negócio
+              </div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">Diferencial competitivo</div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">
+                Acesso ao selo de marca registrada no mercado livre
+              </div>
             </div>
           </div>
         </div>
