@@ -220,13 +220,14 @@ export default function Home() {
       <div className=" text-2xl text-center text-white/75 mb-8">
         É a única forma de garantir sua exclusividade e proteção.
       </div>
-      <div className="flex justify-center items-center gap-16">
+      <div className="flex justify-center gap-16">
         {/* Unregistered Brand Card */}
-        <div className="border border-gray-700 rounded-lg w-[500px]">
+        <div className="border border-gray-700 rounded-lg w-[500px] bg-gray-900 flex flex-col">
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-red-700 text-center">
             MARCA SEM REGISTRO
           </div>
-          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl min-h-[400px]">
+
+          <div className="flex flex-col gap-4 p-12 pt-8 bg-gray-900 text-xl flex-grow-1">
             <div className="flex gap-2 items-center">
               <div>
                 <XIcon />
@@ -261,6 +262,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="bg-gray-800 p-4 rounded-lg text-center text-lg m-8 uppercase">
+            <div>Muito risco, nenhuma segurança</div>
+          </div>
         </div>
 
         {/* Registered Brand Card */}
@@ -268,7 +273,7 @@ export default function Home() {
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-green-700 text-center">
             MARCA COM REGISTRO
           </div>
-          <div className="flex flex-col gap-4 p-12 bg-gray-900 text-xl min-h-[400px]">
+          <div className="flex flex-col gap-4 p-12 pt-8 bg-gray-900 text-xl">
             <div className="flex gap-2 items-center">
               <div>
                 <JadeCheckedIcon />
@@ -311,9 +316,22 @@ export default function Home() {
                 <JadeCheckedIcon />
               </div>
               <div className="font-light">
+                Segurança para registrar domínios e garantir sua identidade
+                digital
+              </div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <div>
+                <JadeCheckedIcon />
+              </div>
+              <div className="font-light">
                 Acesso ao selo de marca registrada no Mercado Livre
               </div>
             </div>
+
+            {/* <div className="bg-green-900 p-4 rounded-lg text-center">
+              <div>Print do Inpi aqui</div>
+            </div> */}
           </div>
         </div>
       </div>
