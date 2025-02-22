@@ -144,7 +144,7 @@ export default function Home() {
               src="/caralogostarbucks.jpeg"
               width={200}
               height={200}
-              alt="disputa legal"
+              alt="felicidade de ter o logo registrado"
             />
 
             <div className="flex flex-col gap-6">
@@ -160,58 +160,61 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-3xl mt-16 mb-12">
-          <span className="text-[#52edb3] mr-3">|</span>IMPORTÂNCIA DO REGISTRO
-          DA MARCA
-        </div>
-        <div className="text-xl mb-6 font-light">
-          Sua marca pode se tornar um dos seus maiores ativos, mas para isso, o
-          primeiro passo é registrá-la. O registro garante que todo o seu
-          esforço e crescimento estejam protegidos, evitando riscos e
-          imprevistos.
-        </div>
+        <div className="flex justify-center mt-16 mb-4">
+          <div className="flex flex-col gap-8 w-3/5 ">
+            <div className="text-3xl mb-4 flex">
+              <span className="text-[#52edb3] mr-3">|</span>
+              <div className="uppercase">
+                A IMPORTÂNCIA DO REGISTRO DA MARCA
+              </div>
+            </div>
 
-        <div className="text-xl mb-6 font-light">
-          Com a marca protegida, seu negócio ganha mais valor, credibilidade e
-          profissionalismo. Sem essa segurança, você pode acabar perdendo tudo o
-          que construiu.
-        </div>
-        <div className="text-xl font-light">
+            <div className="text-xl mb-4 font-light">
+              Sua marca pode se tornar um dos seus maiores ativos, mas para
+              isso, o primeiro passo é registrá-la. O registro garante que todo
+              o seu esforço e crescimento estejam protegidos, evitando riscos e
+              imprevistos.
+            </div>
+
+            <div className="text-xl mb-4 font-light">
+              Com a marca registrada, seu negócio ganha mais valor,
+              credibilidade e profissionalismo. Sem essa segurança, você pode
+              acabar perdendo tudo o que construiu.
+            </div>
+
+            {/* <div className="text-xl font-light">
           Registrar a marca não é caro, caro é ter que recomeçar do zero.
+        </div> */}
+          </div>
         </div>
       </div>
-      <div className="text-3xl mt-16 mb-12">
-        <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
-      </div>
-      <div className="flex flex-wrap justify-center gap-28">
-        <div>
-          <Image
-            src="/infinitygesso3.png"
-            width={200}
-            height={100}
-            alt="infinity gesso marca"
-          />
+
+      <div className="flex justify-center mt-16 mb-4">
+        <div className="flex flex-col gap-8  w-3/5 ">
+          <div className="text-3xl mb-4 flex">
+            <div className="uppercase">Três sessões de assessoria jurídica</div>
+          </div>
+
+          <div className="text-xl font-light w-4/5">
+            Vamos também oferecer uma oportunidade única para obter suporte
+            jurídico especializado e esclarecer todas as suas dúvidas.
+          </div>
+          <div className="text-xl font-light w-4/5">
+            Agende as reuniões no horário mais conveniente para você, não te
+            ajudaremos somente com sua marca mas também com qualquer outra
+            questão jurídica que você tenha.
+          </div>
         </div>
         <div>
           <Image
-            src="/senhortorta.png"
-            width={200}
-            height={200}
-            alt="senhor torta marca"
+            width={300}
+            height={300}
+            alt="consultoria jurídica"
+            src="/consultoria2.jpg"
           />
-        </div>
-        <div>
-          <Image
-            src="/castelewear.png"
-            width={200}
-            height={200}
-            alt="castele wear marca"
-          />
-        </div>
-        <div>
-          <Image src="/west3.png" width={200} height={200} alt="west marca" />
         </div>
       </div>
+
       <div className="flex justify-center mt-16 mb-4">
         <div className="text-center text-4xl font-medium">
           Registrar a marca não é opcional.
@@ -366,6 +369,39 @@ export default function Home() {
           <div className="text-[#00D957] font-bold text-5xl">
             12x de R$ 99,90
           </div>
+        </div>
+      </div>
+
+      <div className="text-3xl mt-16 mb-12">
+        <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
+      </div>
+      <div className="flex flex-wrap justify-center gap-28">
+        <div>
+          <Image
+            src="/infinitygesso3.png"
+            width={200}
+            height={100}
+            alt="infinity gesso marca"
+          />
+        </div>
+        <div>
+          <Image
+            src="/senhortorta.png"
+            width={200}
+            height={200}
+            alt="senhor torta marca"
+          />
+        </div>
+        <div>
+          <Image
+            src="/castelewear.png"
+            width={200}
+            height={200}
+            alt="castele wear marca"
+          />
+        </div>
+        <div>
+          <Image src="/west3.png" width={200} height={200} alt="west marca" />
         </div>
       </div>
     </div>
