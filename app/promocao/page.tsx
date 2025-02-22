@@ -335,6 +335,39 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="flex justify-center items-center flex-col gap-16 mt-16">
+        <div className="text-center text-4xl lg:w-3/5 font-light">
+          Quanto você pagaria para proteger tudo que você construiu e vai
+          construir pelos próximos 10 anos?
+        </div>
+
+        <div className="lg:w-4/5 text-2xl text-center font-light ">
+          É exatamente essa proteção que você vai garantir. A partir do pedido
+          do registro tudo que está associado a sua marca estará protegido. É a
+          melhor decisão que você pode fazer para o seu negócio.
+        </div>
+      </div>
+      <div className="flex justify-center items-center mt-16 mb-4">
+        <div className="flex flex-col gap-8 border border-gray-700 rounded-lg w-[500px] text-center p-8">
+          <div className="flex justify-center">
+            <Image
+              src="/jademarcas2.svg"
+              alt="Jade Marcas Icon"
+              width={260}
+              height={90}
+              className="mb-2"
+            />
+          </div>
+
+          <div className="uppercase font-medium text-lg">
+            Tudo isso por apenas
+          </div>
+          <div className="text-[#00D957] font-bold text-5xl">
+            12x de R$ 99,90
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
