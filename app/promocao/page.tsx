@@ -325,8 +325,12 @@ export default function Home() {
           melhor decisão que você pode fazer para o seu negócio.
         </div>
       </div>
-      <div className="flex justify-center items-center mt-16 mb-4">
-        <div className="flex flex-col gap-8 border border-gray-700 rounded-lg w-[500px] text-center p-8">
+
+      <div className="flex justify-center items-center mt-16 mb-4 gap-4">
+        <div className="text-4xl lg:w-1/5 leading-[1.5]">
+          Investimento no registro JadeMarcas
+        </div>
+        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-[500px] text-center p-8">
           <div className="flex justify-center">
             <Image
               src="/jademarcas2.svg"
@@ -336,14 +340,40 @@ export default function Home() {
               className="mb-2"
             />
           </div>
-
           <div className="uppercase font-medium text-lg">
             Tudo isso por apenas
           </div>
           <div className="text-[#00D957] font-bold text-5xl">
             12x de R$ 99,90
           </div>
+          <button className="bg-gradient-to-r from-green-400 to-green-500 text-white font-bold py-4 px-8 rounded-lg text-xl transform transition duration-200 hover:scale-105 hover:shadow-lg hover:from-green-500 hover:to-green-600 animate-pulse">
+            QUERO GARANTIR O MEU REGISTRO AGORA
+          </button>
+          <div className="flex justify-center">
+            <Image
+              src="/comprasegura3.png"
+              alt="selo de compra segura"
+              width={300}
+              height={200}
+            />
+          </div>
+          <div className="border-t border-gray-600 w-full my-4"></div>
+          <div className="text-xs text-white/75">
+            Compra 100% segura! Entraremos em contato imediatamente após a
+            confirmação do pagamento
+          </div>
         </div>
+
+        <ul className="list-disc marker:text-green-400 ml-4 space-y-4">
+          <li>Pesquisa ilimitada de viabilidade de marca</li>
+          <li>Acompanhamento até a certificação</li>
+          <li>Suporte ilimitado</li>
+          <li>Todos os recursos necessários</li>
+          <li>Certificação da marca no INPI por 10 anos</li>
+          <li className="text-green-400">
+            BÔNUS: Três sessões de assessoria jurídica
+          </li>
+        </ul>
       </div>
 
       <div className="flex justify-center mt-16 mb-4">
