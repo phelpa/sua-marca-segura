@@ -379,26 +379,27 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="flex justify-center mt-16 mb-4">
-        <div className="flex flex-col gap-8  w-3/5 ">
+      <div className="flex flex-col lg:flex-row justify-center mt-16 mb-4 gap-8 lg:gap-16">
+        <div className="flex flex-col gap-8 w-full lg:w-3/5">
           <div className="text-3xl mb-4 flex">
             <div className="uppercase">Três sessões de assessoria jurídica</div>
           </div>
 
-          <div className="text-xl font-light w-4/5">
+          <div className="text-xl font-light w-full lg:w-4/5">
             Vamos também oferecer uma oportunidade única para obter assessoria
             jurídica especializada e esclarecer todas as suas dúvidas.
           </div>
-          <div className="text-xl font-light w-4/5">
+          <div className="text-xl font-light w-full lg:w-4/5">
             Agende as reuniões no horário mais conveniente para você, não te
             ajudaremos somente com sua marca mas também com qualquer outra
             questão jurídica que você tenha.
           </div>
         </div>
-        <div>
+
+        <div className="flex justify-center w-full lg:w-auto">
           <Image
-            width={300}
-            height={300}
+            width={280}
+            height={200}
             alt="consultoria jurídica"
             src="/consultoria2.jpg"
           />
