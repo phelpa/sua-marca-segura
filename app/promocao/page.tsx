@@ -190,32 +190,6 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center mt-16 mb-4">
-        <div className="flex flex-col gap-8  w-3/5 ">
-          <div className="text-3xl mb-4 flex">
-            <div className="uppercase">Três sessões de assessoria jurídica</div>
-          </div>
-
-          <div className="text-xl font-light w-4/5">
-            Vamos também oferecer uma oportunidade única para obter suporte
-            jurídico especializado e esclarecer todas as suas dúvidas.
-          </div>
-          <div className="text-xl font-light w-4/5">
-            Agende as reuniões no horário mais conveniente para você, não te
-            ajudaremos somente com sua marca mas também com qualquer outra
-            questão jurídica que você tenha.
-          </div>
-        </div>
-        <div>
-          <Image
-            width={300}
-            height={300}
-            alt="consultoria jurídica"
-            src="/consultoria2.jpg"
-          />
-        </div>
-      </div>
-
-      <div className="flex justify-center mt-16 mb-4">
         <div className="text-center text-4xl font-medium">
           Registrar a marca não é opcional.
         </div>
@@ -369,6 +343,32 @@ export default function Home() {
           <div className="text-[#00D957] font-bold text-5xl">
             12x de R$ 99,90
           </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-16 mb-4">
+        <div className="flex flex-col gap-8  w-3/5 ">
+          <div className="text-3xl mb-4 flex">
+            <div className="uppercase">Três sessões de assessoria jurídica</div>
+          </div>
+
+          <div className="text-xl font-light w-4/5">
+            Vamos também oferecer uma oportunidade única para obter assessoria
+            jurídica especializada e esclarecer todas as suas dúvidas.
+          </div>
+          <div className="text-xl font-light w-4/5">
+            Agende as reuniões no horário mais conveniente para você, não te
+            ajudaremos somente com sua marca mas também com qualquer outra
+            questão jurídica que você tenha.
+          </div>
+        </div>
+        <div>
+          <Image
+            width={300}
+            height={300}
+            alt="consultoria jurídica"
+            src="/consultoria2.jpg"
+          />
         </div>
       </div>
 
