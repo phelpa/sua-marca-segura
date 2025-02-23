@@ -101,32 +101,34 @@ export default function Home() {
             Uma falha na proteção da sua marca pode abrir espaço para imitações,
             disputas judiciais e prejuízos
           </div>
-          <div className="flex gap-12 lg:w-3/5 p-6 bg-gray-900 border border-gray-500">
+
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
             <Image
               src="/juizbravo.png"
               width={200}
               height={200}
               alt="disputa legal"
+              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
             />
-            <div className="flex flex-col gap-6 ">
-              <div className="text-3xl">
+            <div className="flex flex-col gap-4 text-center lg:text-left">
+              <div className="text-2xl sm:text-3xl">
                 <span className="text-[#52edb3]">|</span> Sem problemas com a
                 justiça
               </div>
-              <div className="text-2xl text-white/75">
+              <div className="text-lg sm:text-2xl text-white/75">
                 A sua marca registrada evita dores de cabeça com a justiça caso
                 alguém queira ter uma marca com o mesmo nome
               </div>
             </div>
           </div>
 
-          <div className="flex gap-12 lg:w-3/5 items-center p-6 bg-gray-900 border border-gray-500">
-            <div className="flex flex-col gap-6">
-              <div className="text-3xl">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
+            <div className="flex flex-col gap-4 text-center lg:text-left">
+              <div className="text-2xl sm:text-3xl">
                 <span className="text-[#52edb3]">|</span> Evite prejuízos e
                 retrabalhos
               </div>
-              <div className="text-2xl text-white/75">
+              <div className="text-lg sm:text-2xl text-white/75">
                 Também evita que você tenha que recomeçar do zero caso alguém
                 registre a sua marca antes de você
               </div>
@@ -136,23 +138,24 @@ export default function Home() {
               width={200}
               height={200}
               alt="disputa legal"
+              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
             />
           </div>
 
-          <div className="flex gap-12 lg:w-3/5 items-center p-6 bg-gray-900 border border-gray-500">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
             <Image
               src="/caralogostarbucks.jpeg"
               width={200}
               height={200}
               alt="felicidade de ter o logo registrado"
+              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
             />
-
-            <div className="flex flex-col gap-6">
-              <div className="text-3xl">
+            <div className="flex flex-col gap-4 text-center lg:text-left">
+              <div className="text-2xl sm:text-3xl">
                 <span className="text-[#52edb3]">|</span> Segurança de ter a sua
                 marca protegida por 10 anos
               </div>
-              <div className="text-2xl text-white/75">
+              <div className="text-lg sm:text-2xl text-white/75">
                 Não tem maior tranquilidade que saber que a sua marca é
                 realmente sua, o nome é seu e você pode crescer sem preocupações
               </div>
@@ -327,7 +330,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center items-center mt-16 mb-4 gap-4">
-        <div className="text-4xl lg:w-1/5 leading-[1.5]">
+        <div className="text-4xl font-medium  lg:w-1/5 leading-[1.5]">
           Investimento no registro JadeMarcas
         </div>
         <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-[500px] text-center p-8">
