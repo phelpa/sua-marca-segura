@@ -2,6 +2,7 @@ import Image from "next/image";
 import { keywords } from "../components/keywords";
 import { XIcon } from "../icons/x-icon";
 import { JadeCheckedIcon } from "../icons/jade-checked-icon";
+import { BuyButton3 } from "../components/buy-button3";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -355,9 +356,8 @@ export default function Home() {
           <div className="text-[#00D957] font-bold text-5xl">
             12x de R$ 99,90
           </div>
-          <button className="bg-gradient-to-r from-green-400 to-green-500 text-white font-bold py-4 px-8 rounded-lg text-xl transform transition duration-200 hover:scale-105 hover:shadow-lg hover:from-green-500 hover:to-green-600 animate-pulse">
-            QUERO GARANTIR O MEU REGISTRO AGORA
-          </button>
+
+          <BuyButton3 />
           <div className="flex justify-center">
             <Image
               src="/comprasegura3.png"
