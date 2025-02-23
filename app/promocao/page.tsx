@@ -328,12 +328,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center mt-16 mb-4 gap-8 lg:gap-16">
-        <div className="text-4xl font-medium lg:w-1/5 leading-[1.5] text-center lg:text-left order-1 ">
+      <div className="flex flex-col lg:flex-row justify-around items-center mt-16 mb-4 gap-8 lg:gap-16">
+        <div className="text-4xl font-medium leading-[1.5] text-center lg:text-left order-1 lg:w-1/5  ">
           Investimento no registro JadeMarcas
         </div>
 
-        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-full lg:w-[500px] text-center p-8 order-3 lg:order-2 ">
+        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-full lg:w-[500px] text-center p-8 order-3 lg:order-2">
           <div className="flex justify-center">
             <Image
               src="/jademarcas2.svg"
@@ -367,7 +367,7 @@ export default function Home() {
           </div>
         </div>
 
-        <ul className="list-disc marker:text-green-400 ml-4 space-y-4 text-lg order-2 lg:order-3">
+        <ul className="list-disc marker:text-green-400 ml-4 space-y-4 text-lg order-2 lg:order-3 lg:w-1/5">
           <li>Pesquisa ilimitada de viabilidade de marca</li>
           <li>Acompanhamento até a certificação</li>
           <li>Suporte ilimitado</li>
