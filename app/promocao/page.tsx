@@ -171,19 +171,25 @@ export default function Home() {
             <div className="uppercase">A IMPORTÂNCIA DO REGISTRO DA MARCA</div>
           </div>
 
-          <div className="text-xl mb-4 font-light">
-            Sua marca pode se tornar um dos seus maiores ativos, mas para isso,
-            o primeiro passo é registrá-la. O registro garante que todo o seu
-            esforço e crescimento estejam protegidos, evitando riscos e
-            imprevistos.
+          <div className="text-lg mb-4 font-light">
+            Você começou o seu negócio com muito otimismo e empolgação, teve
+            seus altos e baixos e sabe que não é fácil construir um negócio do
+            zero. Talvez esteja no início, nas primeiras vendas ou já está um
+            tempo no mercado e sempre com alguma idéia para ganhar mais
+            dinheiro.
           </div>
 
-          <div className="text-xl mb-4 font-light">
-            Com a marca registrada, seu negócio ganha mais valor, credibilidade
-            e profissionalismo. Sem essa segurança, você pode acabar perdendo
-            tudo o que construiu.
+          <div className="text-lg mb-4 font-light">
+            E mais importante que ganhar mais dinheiro é assegurar todo o
+            investimento que você já fez na sua empresa e que ainda vai fazer
+            por 10 anos. Só é dono da marca quem registra, com o registro você
+            evita o desastre que seria perder o nome do seu negócio e ter que
+            recomeçar do zero.
           </div>
-
+          <div className="text-lg mb-4 font-light">
+            Tudo que está associado a sua marca vai continuar sendo seu e tudo
+            que você construir também.
+          </div>
           {/* <div className="text-xl font-light">
       Registrar a marca não é caro, caro é ter que recomeçar do zero.
     </div> */}
