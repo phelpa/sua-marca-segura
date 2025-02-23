@@ -162,33 +162,31 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="flex justify-center mt-16 mb-4">
-          <div className="flex flex-col gap-8 w-3/5 ">
-            <div className="text-3xl mb-4 flex">
-              <span className="text-[#52edb3] mr-3">|</span>
-              <div className="uppercase">
-                A IMPORTÂNCIA DO REGISTRO DA MARCA
-              </div>
-            </div>
-
-            <div className="text-xl mb-4 font-light">
-              Sua marca pode se tornar um dos seus maiores ativos, mas para
-              isso, o primeiro passo é registrá-la. O registro garante que todo
-              o seu esforço e crescimento estejam protegidos, evitando riscos e
-              imprevistos.
-            </div>
-
-            <div className="text-xl mb-4 font-light">
-              Com a marca registrada, seu negócio ganha mais valor,
-              credibilidade e profissionalismo. Sem essa segurança, você pode
-              acabar perdendo tudo o que construiu.
-            </div>
-
-            {/* <div className="text-xl font-light">
-          Registrar a marca não é caro, caro é ter que recomeçar do zero.
-        </div> */}
+      <div className="flex justify-center mt-16 mb-4">
+        <div className="flex flex-col gap-8 w-full md:w-3/5">
+          <div className="text-3xl mb-4 flex items-center">
+            <span className="text-[#52edb3] mr-3">|</span>
+            <div className="uppercase">A IMPORTÂNCIA DO REGISTRO DA MARCA</div>
           </div>
+
+          <div className="text-xl mb-4 font-light">
+            Sua marca pode se tornar um dos seus maiores ativos, mas para isso,
+            o primeiro passo é registrá-la. O registro garante que todo o seu
+            esforço e crescimento estejam protegidos, evitando riscos e
+            imprevistos.
+          </div>
+
+          <div className="text-xl mb-4 font-light">
+            Com a marca registrada, seu negócio ganha mais valor, credibilidade
+            e profissionalismo. Sem essa segurança, você pode acabar perdendo
+            tudo o que construiu.
+          </div>
+
+          {/* <div className="text-xl font-light">
+      Registrar a marca não é caro, caro é ter que recomeçar do zero.
+    </div> */}
         </div>
       </div>
 
@@ -200,14 +198,15 @@ export default function Home() {
       <div className=" text-2xl text-center text-white/75 mb-8">
         É a única forma de garantir sua exclusividade e proteção.
       </div>
-      <div className="flex justify-center gap-16">
+
+      <div className="flex justify-center gap-8 md:gap-16 flex-wrap">
         {/* Unregistered Brand Card */}
-        <div className="border border-gray-700 rounded-lg w-[500px] bg-gray-900 flex flex-col">
+        <div className="border border-gray-700 rounded-lg w-full md:w-[500px] bg-gray-900 flex flex-col mb-8 md:mb-0">
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-red-700 text-center">
             MARCA SEM REGISTRO
           </div>
 
-          <div className="flex flex-col gap-4 p-12 pt-8 bg-gray-900 text-xl flex-grow-1">
+          <div className="flex flex-col gap-4 p-6 md:p-12 pt-8 bg-gray-900 text-xl flex-grow-1">
             <div className="flex gap-2 items-center">
               <div>
                 <XIcon />
@@ -249,11 +248,11 @@ export default function Home() {
         </div>
 
         {/* Registered Brand Card */}
-        <div className="border border-gray-700 rounded-lg w-[500px]">
+        <div className="border border-gray-700 rounded-lg w-full md:w-[500px]">
           <div className="border border-gray-700 rounded-lg p-6 text-2xl bg-green-700 text-center">
             MARCA COM REGISTRO
           </div>
-          <div className="flex flex-col gap-4 p-12 pt-8 bg-gray-900 text-xl">
+          <div className="flex flex-col gap-4 p-6 md:p-12 pt-8 bg-gray-900 text-xl">
             <div className="flex gap-2 items-center">
               <div>
                 <JadeCheckedIcon />
@@ -310,8 +309,8 @@ export default function Home() {
             </div>
 
             {/* <div className="bg-green-900 p-4 rounded-lg text-center">
-              <div>Print do Inpi aqui</div>
-            </div> */}
+        <div>Print do Inpi aqui</div>
+      </div> */}
           </div>
         </div>
       </div>
@@ -329,11 +328,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-16 mb-4 gap-4">
-        <div className="text-4xl font-medium  lg:w-1/5 leading-[1.5]">
+      <div className="flex flex-col lg:flex-row justify-center items-center mt-16 mb-4 gap-8 lg:gap-16">
+        <div className="text-4xl font-medium lg:w-1/5 leading-[1.5] text-center lg:text-left order-1 ">
           Investimento no registro JadeMarcas
         </div>
-        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-[500px] text-center p-8">
+
+        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-full lg:w-[500px] text-center p-8 order-3 lg:order-2 ">
           <div className="flex justify-center">
             <Image
               src="/jademarcas2.svg"
@@ -367,7 +367,7 @@ export default function Home() {
           </div>
         </div>
 
-        <ul className="list-disc marker:text-green-400 ml-4 space-y-4">
+        <ul className="list-disc marker:text-green-400 ml-4 space-y-4 text-lg order-2 lg:order-3">
           <li>Pesquisa ilimitada de viabilidade de marca</li>
           <li>Acompanhamento até a certificação</li>
           <li>Suporte ilimitado</li>
