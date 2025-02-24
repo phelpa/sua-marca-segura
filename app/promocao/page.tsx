@@ -172,24 +172,23 @@ export default function Home() {
             <div className="uppercase">A IMPORTÂNCIA DO REGISTRO DA MARCA</div>
           </div>
 
-          <div className="text-lg mb-2 font-light">
-            Você começou o seu negócio com muito otimismo e empolgação, teve
-            seus altos e baixos e sabe que não é fácil construir um negócio do
-            zero. Quase todo dia você pensa em alguma forma de ganhar mais
-            dinheiro.
+          <div className="text-xl mb-2 font-light">
+            Não é fácil construir um negócio do zero, é uma verdadeira jornada
+            de altos e baixos, todo dia é pensar em alguma forma forma de ganhar
+            mais dinheiro.
           </div>
 
-          <div className="text-lg mb-2 font-light">
+          <div className="text-xl mb-2 font-light">
             E mais importante que ganhar mais dinheiro é assegurar todo o
             investimento que você já fez e que ainda vai fazer por 10 anos.
           </div>
 
-          <div className="text-lg mb-2 font-light">
+          <div className="text-xl mb-2 font-light">
             Só é dono da marca quem registra, com o registro você evita o
             desastre que seria perder o nome do seu negócio e ter que recomeçar
             do zero.
           </div>
-          <div className="text-lg mb-2 font-light">
+          <div className="text-xl mb-2 font-light">
             Tudo que está associado a sua marca vai continuar sendo seu e tudo
             que você construir também.
           </div>
