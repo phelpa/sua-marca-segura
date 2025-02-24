@@ -190,7 +190,7 @@ export default function Home() {
           </div>
           <div className="text-xl mb-2 font-light">
             Tudo que está associado a sua marca vai continuar sendo seu e tudo
-            que você construir também.
+            que você construir a partir de hoje também.
           </div>
           {/* <div className="text-xl font-light">
       Registrar a marca não é caro, caro é ter que recomeçar do zero.
