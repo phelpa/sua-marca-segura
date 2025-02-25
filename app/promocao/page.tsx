@@ -174,8 +174,8 @@ export default function Home() {
 
           <div className="text-xl mb-2 font-light">
             Não é fácil construir um negócio do zero, é uma verdadeira jornada
-            de altos e baixos, todo dia é pensar em alguma forma forma de ganhar
-            mais dinheiro.
+            de altos e baixos, e todo dia é pensar em alguma forma forma de
+            ganhar mais dinheiro.
           </div>
 
           <div className="text-xl mb-2 font-light">
