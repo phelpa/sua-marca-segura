@@ -3,7 +3,7 @@ export const InpiIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.0"
-      width="250"
+      width="350"
       height="80"
       viewBox="0 0 946.000000 252.000000"
       preserveAspectRatio="xMidYMid meet"

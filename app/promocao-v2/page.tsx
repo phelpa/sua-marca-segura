@@ -7,6 +7,9 @@ import { InpiIcon } from "../icons/inpi-icon";
 import { McDonaldsLogo } from "../icons/mc-donalds-logo";
 import { StarbucksLogo } from "../icons/starbucks-logo";
 import { CocaColaLogo } from "../icons/coca-cola-logo";
+import { BuyButton4 } from "../components/buy-button4";
+import { IfoodIcon } from "../icons/ifood-icon";
+import { NetflixLogo } from "../icons/netflix-logo";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,14 +58,14 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <div className="text-white bg-gray-950 min-h-screen p-16 sm:p-12 lg:p-16 bg-cover bg-center">
+    <div className="text-white bg-gray-950 min-h-screen bg-cover bg-center">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="flex flex-col ">
-        <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-12">
-          <div className="flex flex-col gap-8 w-full lg:w-2/5 text-center lg:text-left items-center lg:items-start">
+      <div className="flex flex-col sm:p-12">
+        <div className="flex flex-wrap justify-between items-center gap-8 ">
+          <div className="flex flex-col gap-12 w-full lg:w-2/5 text-center lg:text-left items-center lg:items-start">
             <div>
               <Image
                 src="/jademarcas2.svg"
@@ -76,7 +79,14 @@ export default function Home() {
               A partir de agora, sua marca estará protegida com o registro
               oficial no INPI
             </h2>
-            <InpiIcon />
+
+            <div className="flex gap-8">
+              <InpiIcon />
+              <BuyButton4
+                title="QUERO REGISTRAR MINHA MARCA NO INPI"
+                className="min-w-[200px]"
+              />
+            </div>
 
             <h2 className="text-2xl sm:text-2xl w-full mt-4 text-white">
               Proteja sua marca por 10 anos com o registro no INPI, realizado
@@ -101,29 +111,50 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-5 dark:via-neutral-200" />
 
-      <div className="flex justify-center flex-col gap-8 w-full mt-24 mb-4">
-        <div className="text-3xl mb-4 flex items-center">
+      <hr className="border-gray-800" />
+
+      <div
+        className="flex justify-center flex-col gap-8 w-full pt-4 "
+        style={{ backgroundColor: "#101010" }}
+      >
+        {/* <div className="text-3xl mb-4 flex items-center">
           <span className="text-[#52edb3] mr-3">|</span>
           <div className="uppercase">A IMPORTÂNCIA DO REGISTRO DA MARCA</div>
-        </div>
+        </div> */}
 
         <div className="flex gap-8 w-full">
-          <div className="md:w-3/5 flex gap-8 flex-wrap ">
+          <div className="md:w-3/5 flex gap-8 flex-wrap pl-8 relative">
             <McDonaldsLogo className="w-40 h-40" />
             <StarbucksLogo className="w-40 h-40" />
-            <CocaColaLogo className="w-80 h-40" />
+            <CocaColaLogo className="w-80 h-24" />
+            <IfoodIcon className="w-40 h-40" />
+            <NetflixLogo className="w-40 h-40" />
+            <div className="font-serif absolute bottom-0 left-0 pl-2">
+              Todas as marcas que você conhece são registradas no INPI
+            </div>
           </div>
           <div className="flex flex-col gap-8">
+            <div className="text-3xl font-serif">
+              Se você pesquisou por registro de marca e encontrou essa página, é
+              com <span className="text-green-700">você mesmo</span> que eu
+              quero conversar.
+            </div>
             <div className="text-xl font-light">
-              Não é fácil construir um negócio do zero, é uma verdadeira jornada
-              de altos e baixos, e todo dia é pensar em alguma forma forma de
-              ganhar mais dinheiro.
+              Eu sei que não é fácil (ou não está sendo) construir um negócio do
+              zero, é uma verdadeira jornada de altos e baixos, e todo dia sua
+              mente rodopia pensando em novas formas de ganhar mais dinheiro.
             </div>
 
             <div className="text-xl font-light">
-              E mais importante que ganhar mais dinheiro é assegurar todo o
-              investimento que você já fez e que ainda vai fazer por 10 anos.
+              Parece que não, mas existe algo mais importante que ganhar
+              dinheiro:
+            </div>
+
+            <div className="text-2xl font-light underline decoration-green-700 text-green-400">
+              Assegurar todo o investimento que você já fez no seu negócio e que
+              ainda vai fazer por 10 anos.
             </div>
 
             <div className="text-xl font-light">
@@ -141,7 +172,25 @@ export default function Home() {
     </div> */}
         </div>
       </div>
+      <div
+        className="border-gray-800 h-12"
+        style={{ backgroundColor: "#101010" }}
+      />
 
+      <hr className="border-gray-800" />
+
+      <div
+        style={{ backgroundColor: "#fff" }}
+        className="flex justify-center pt-8"
+      >
+        <Image
+          src="/grafico5.png"
+          alt="gráfico da sua empresa com a marca registrada"
+          width={1100}
+          height={500}
+          className="mb-2"
+        />
+      </div>
       <div className="flex justify-center mt-24 mb-4">
         <div className="text-center text-4xl font-medium">
           Registrar a marca não é opcional.
@@ -273,7 +322,7 @@ export default function Home() {
           construir pelos próximos 10 anos?
         </div>
 
-        <div className="lg:w-4/5 text-2xl text-center font-light ">
+        <div className="lg:w-4/5 text-2xl text-center font-light">
           É exatamente essa proteção que você vai garantir. A partir do pedido
           do registro tudo que está associado a sua marca estará protegido. É a
           melhor decisão que você pode fazer para o seu negócio.

@@ -2,7 +2,7 @@
 
 declare const fbq: (event: string, action: string) => void;
 
-export function BuyButton3({
+export function BuyButton4({
   title = "QUERO GARANTIR O MEU REGISTRO AGORA",
   className = "",
 }: {
@@ -19,7 +19,7 @@ export function BuyButton3({
         onClick={() => {
           fbq("track", "Purchase");
         }}
-        className={`bg-gradient-to-r from-green-400 to-green-500 text-white font-bold py-4 px-8 rounded-lg text-xl transform transition duration-200 hover:scale-105 hover:shadow-lg hover:from-green-500 hover:to-green-600 animate-pulse ${className}`}
+        className={`bg-gradient-to-r from-green-700 to-green-900 text-white font-bold py-4 px-8 rounded-lg text-lg transform transition duration-200 hover:scale-105 hover:shadow-lg hover:from-green-500 hover:to-green-600 animate-pulse ${className}`}
       >
         {title}
       </button>
