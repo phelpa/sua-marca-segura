@@ -195,7 +195,7 @@ export default function Home() {
       <div className="flex justify-center items-center flex-col gap-16 mt-16">
         <div className="text-center text-4xl lg:w-2/5 font-light">
           A sua marca é um dos seus bens mais valiosos, é o rosto do seu
-          negócio, o nome em que sua empresa é identificada no mercado.
+          negócio, o nome em que sua empresa é conhecida no mercado.
         </div>
         <div className="lg:w-2/5 text-2xl text-center text-white/75">
           É mais que óbvio que é necessário proteger esse patrimônio, mas não é
@@ -225,16 +225,16 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
           <div className="flex flex-col gap-4 text-center lg:text-left">
             <div className="text-2xl sm:text-3xl">
-              <span className="text-[#52edb3]">|</span> Evite prejuízos e
-              retrabalhos
+              <span className="text-[#52edb3]">|</span> Instagram protegido da
+              sua empresa
             </div>
             <div className="text-lg sm:text-2xl text-white/75">
-              Também evita que você tenha que recomeçar do zero caso alguém
-              registre a sua marca antes de você
+              Todo dia o Instagram recebe denúncias e derruba páginas que estão
+              usando um nome de marca já registrado.
             </div>
           </div>
           <Image
-            src="/mulherfrustrada.jpeg"
+            src="/instagramlogo.png"
             width={200}
             height={200}
             alt="disputa legal"
@@ -259,6 +259,38 @@ export default function Home() {
               Não tem maior tranquilidade que saber que a sua marca é realmente
               sua, o nome é seu e você pode crescer sem preocupações
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex mt-16 mb-4 gap-8 lg:gap-16  justify-center">
+        <div className="flex flex-col gap-12 w-full lg:w-3/5">
+          <div className="text-3xl uppercase text-green-400">
+            🔎 PESQUISA ILIMITADA DE VIABILIDADE DE MARCA
+          </div>
+
+          <div className="text-2xl font-light w-full lg:w-5/5">
+            Para sempre vamos pesquisar se o nome que você quer usar já pertence
+            a outra pessoa. Você vai poder solicitar quantas pesquisas quiser,
+            para qualquer nome, sempre que precisar.
+          </div>
+          <div className="text-2xl font-light w-full lg:w-5/5">
+            Sabemos que a sua empresa vai crescer e que outras idéias e nomes
+            podem aparecer e toda vez que isso acontecer vamos estar a
+            disposição para fazer uma pesquisa completa da viabilidade desse
+            nome.
+          </div>
+          <div className="text-2xl font-light w-full lg:w-5/5">
+            Já pensou em fazer essa pesquisa sozinho? Não é fácil ou simples.
+          </div>
+
+          <div className="text-2xl font-light w-full lg:w-5/5">
+            Com toda a nossa experiência em marcas vamos fazer isso para você.
+            Vamos te ajudar a encontrar o nome perfeito para o seu negócio e
+            garantir que esse nome seja seu.{" "}
+            <span className="text-2xl font-light underline decoration-green-700 text-green-400">
+              Lembrando que isso é para sempre!
+            </span>
           </div>
         </div>
       </div>
