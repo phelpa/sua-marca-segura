@@ -184,13 +184,85 @@ export default function Home() {
         className="flex justify-center pt-8"
       >
         <Image
-          src="/grafico5.png"
+          src="/grafico6.png"
           alt="gráfico da sua empresa com a marca registrada"
           width={1100}
           height={500}
           className="mb-2"
         />
       </div>
+
+      <div className="flex justify-center items-center flex-col gap-16 mt-16">
+        <div className="text-center text-4xl lg:w-2/5 font-light">
+          A sua marca é um dos seus bens mais valiosos, é o rosto do seu
+          negócio, o nome em que sua empresa é identificada no mercado.
+        </div>
+        <div className="lg:w-2/5 text-2xl text-center text-white/75">
+          É mais que óbvio que é necessário proteger esse patrimônio, mas não é
+          tão óbvio outros benefícios que o registro traz para o seu negócio :
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
+          <Image
+            src="/juizbravo.png"
+            width={200}
+            height={200}
+            alt="disputa legal"
+            className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
+          />
+          <div className="flex flex-col gap-4 text-center lg:text-left">
+            <div className="text-2xl sm:text-3xl">
+              <span className="text-[#52edb3]">|</span> Sem problemas com a
+              justiça
+            </div>
+            <div className="text-lg sm:text-2xl text-white/75">
+              A sua marca registrada evita dores de cabeça com a justiça caso
+              alguém queira ter uma marca com o mesmo nome
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
+          <div className="flex flex-col gap-4 text-center lg:text-left">
+            <div className="text-2xl sm:text-3xl">
+              <span className="text-[#52edb3]">|</span> Evite prejuízos e
+              retrabalhos
+            </div>
+            <div className="text-lg sm:text-2xl text-white/75">
+              Também evita que você tenha que recomeçar do zero caso alguém
+              registre a sua marca antes de você
+            </div>
+          </div>
+          <Image
+            src="/mulherfrustrada.jpeg"
+            width={200}
+            height={200}
+            alt="disputa legal"
+            className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
+          />
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-3xl p-6 bg-gray-900 border border-gray-500">
+          <Image
+            src="/caralogostarbucks.jpeg"
+            width={200}
+            height={200}
+            alt="felicidade de ter o logo registrado"
+            className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
+          />
+          <div className="flex flex-col gap-4 text-center lg:text-left">
+            <div className="text-2xl sm:text-3xl">
+              <span className="text-[#52edb3]">|</span> Segurança de ter a sua
+              marca protegida por 10 anos
+            </div>
+            <div className="text-lg sm:text-2xl text-white/75">
+              Não tem maior tranquilidade que saber que a sua marca é realmente
+              sua, o nome é seu e você pode crescer sem preocupações
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="flex justify-center mt-24 mb-4">
         <div className="text-center text-4xl font-medium">
           Registrar a marca não é opcional.
