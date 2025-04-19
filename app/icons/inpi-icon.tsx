@@ -1,4 +1,4 @@
-export const InpiIcon = () => {
+export const InpiIcon = ({ ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ export const InpiIcon = () => {
       height="80"
       viewBox="0 0 946.000000 252.000000"
       preserveAspectRatio="xMidYMid meet"
+      {...props}
     >
       <g
         transform="translate(0.000000,252.000000) scale(0.100000,-0.100000)"

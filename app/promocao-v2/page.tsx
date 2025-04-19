@@ -426,28 +426,60 @@ export default function Home() {
           construir pelos próximos 10 anos?
         </div>
 
-        <div className="lg:w-4/5 text-2xl text-center font-light">
+        <div className="lg:w-4/5 text-2xl text-center font-light mb-4">
           É exatamente essa proteção que você vai garantir. A partir do pedido
-          do registro tudo que está associado a sua marca estará protegido. É a
-          melhor decisão que você pode fazer para o seu negócio.
+          do registro tudo que está associado a sua marca estará protegido. É o
+          melhor investimento que você pode fazer para o seu negócio.
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-around items-center mt-16 mb-4 gap-8 lg:gap-16">
-        <div className="text-4xl font-medium leading-[1.5] text-center lg:text-left order-1 lg:w-1/5  ">
-          Investimento no registro JadeMarcas
-        </div>
+      <div className="flex justify-center items-center mt-8 mb-8">
+        <InpiIcon style={{ marginLeft: "-42px" }} />
+        <div className="text-4xl mx-4" style={{ marginLeft: "-24px" }}>
+          +
+        </div>{" "}
+        <Image
+          src="/jademarcas2.svg"
+          alt="Jade Marcas Icon"
+          width={260}
+          height={90}
+          className="mb-2"
+        />
+      </div>
 
+      <div className="flex flex-col justify-center items-center space-y-4 lg:w-3/5 mx-auto">
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4 ">
+          <span>Pesquisa ilimitada de viabilidade de marca</span>
+          <span>R$ 199,00</span>
+        </div>
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
+          <span>Acompanhamento até a certificação</span>
+          <span>R$ 299,00</span>
+        </div>
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
+          <span>Consultoria e suporte ilimitados</span>
+          <span>R$ 150,00</span>
+        </div>
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
+          <span>Todos os recursos necessários</span>
+          <span>R$ 450,00</span>
+        </div>
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
+          <span>Certificação da marca no INPI por 10 anos</span>
+          <span>R$ 1.000,00</span>
+        </div>
+        <div className="flex justify-between items-center text-xl text-green-400 border-b border-white w-full pb-4">
+          <span>BÔNUS: Três sessões de assessoria jurídica</span>
+          <span>Grátis</span>
+        </div>
+      </div>
+
+      {/* <div className="mt-16 text-4xl text-center">
+        Investimento para ter um registro de marca completo e seguro
+      </div> */}
+
+      <div className="flex flex-col lg:flex-row justify-around items-center mt-16 mb-4 gap-8 lg:gap-16">
         <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-full lg:w-[500px] text-center p-8 order-3 lg:order-2">
-          <div className="flex justify-center">
-            <Image
-              src="/jademarcas2.svg"
-              alt="Jade Marcas Icon"
-              width={260}
-              height={90}
-              className="mb-2"
-            />
-          </div>
           <div className="uppercase font-medium text-lg">
             Tudo isso por apenas
           </div>
@@ -470,17 +502,6 @@ export default function Home() {
             confirmação do pagamento
           </div>
         </div>
-
-        <ul className="list-disc marker:text-green-400 ml-4 space-y-4 text-lg order-2 lg:order-3 lg:w-1/5">
-          <li>Pesquisa ilimitada de viabilidade de marca</li>
-          <li>Acompanhamento até a certificação</li>
-          <li>Suporte ilimitado</li>
-          <li>Todos os recursos necessários</li>
-          <li>Certificação da marca no INPI por 10 anos</li>
-          <li className="text-green-400">
-            BÔNUS: Três sessões de assessoria jurídica
-          </li>
-        </ul>
       </div>
 
       <div className="flex flex-col lg:flex-row justify-center mt-16 mb-4 gap-8 lg:gap-16">
