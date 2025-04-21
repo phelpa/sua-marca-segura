@@ -89,9 +89,14 @@ export default function Home() {
             </div>
 
             <h2 className="text-2xl sm:text-2xl w-full mt-4 text-white">
-              Proteja sua marca por 10 anos com o registro no INPI, realizado
-              por especialistas de forma rápida, simples e sem complicação para
-              você.
+              <span className="block mb-2">
+                Proteja sua marca por 10 anos com o registro no INPI, realizado
+                por especialistas de forma rápida e simples.
+              </span>
+              <span className="block text-green-600 font-semibold">
+                O único registro de marca com pesquisa de viabilidade ilimitada
+                e assessoria jurídica para qualquer dúvida.
+              </span>
             </h2>
           </div>
 
@@ -450,23 +455,32 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center space-y-4 lg:w-3/5 mx-auto">
         <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4 ">
           <span>Pesquisa ilimitada de viabilidade de marca</span>
-          <span>R$ 199,00</span>
+          <span style={{ color: "#4C72C4" }}>R$ 397</span>
         </div>
         <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
           <span>Acompanhamento até a certificação</span>
-          <span>R$ 299,00</span>
+          <span style={{ color: "#4C72C4" }}>R$ 447</span>
         </div>
         <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
           <span>Consultoria e suporte ilimitados</span>
-          <span>R$ 150,00</span>
+          <span style={{ color: "#4C72C4" }}>R$ 289</span>
         </div>
         <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
           <span>Todos os recursos necessários</span>
-          <span>R$ 450,00</span>
+          <span style={{ color: "#4C72C4" }}>R$ 543</span>
         </div>
         <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
           <span>Certificação da marca no INPI por 10 anos</span>
-          <span>R$ 1.000,00</span>
+          <span style={{ color: "#4C72C4" }}>R$ 1128</span>
+        </div>
+        <div className="flex justify-between items-center text-xl border-b border-white w-full pb-4">
+          <span>TOTAL</span>
+          <span
+            className="text-green-400 text-2xl"
+            style={{ color: "#4C72C4" }}
+          >
+            R$ 2.804
+          </span>
         </div>
         <div className="flex justify-between items-center text-xl text-green-400 border-b border-white w-full pb-4">
           <span>BÔNUS: Três sessões de assessoria jurídica</span>
@@ -478,28 +492,57 @@ export default function Home() {
         Investimento para ter um registro de marca completo e seguro
       </div> */}
 
-      <div className="flex flex-col lg:flex-row justify-around items-center mt-16 mb-4 gap-8 lg:gap-16">
-        <div className="flex flex-col gap-8 border border-gray-500 rounded-lg w-full lg:w-[500px] text-center p-8 order-3 lg:order-2">
-          <div className="uppercase font-medium text-lg">
-            Tudo isso por apenas
-          </div>
-          <div className="text-[#00D957] font-bold text-5xl">
-            12x de R$ 99,90
-          </div>
+      <div
+        className="flex justify-center items-center flex-col pt-16 mt-8"
+        style={{ backgroundColor: "#101010" }}
+      >
+        <div className="lg:w-2/5 text-3xl text-center font-light mb-4 font-serif leading-tight">
+          Mas eu não quero que a sua decisão entre o
+          <span className="text-[40px] text-[#EDA4A4] mt-2"> NÃO </span> e o
+          <span className="text-[40px] text-[#A4EDB4] mt-2"> SIM </span>
+          seja por uma questão de preço
+        </div>
 
-          <BuyButton3 />
-          <div className="flex justify-center">
-            <Image
-              src="/comprasegura3.png"
-              alt="selo de compra segura"
-              width={300}
-              height={200}
-            />
-          </div>
-          <div className="border-t border-gray-600 w-full my-4"></div>
-          <div className="text-xs text-white/75">
-            Compra 100% segura! Entraremos em contato imediatamente após a
-            confirmação do pagamento
+        <div className="flex lg:w-3/5 flex-col lg:flex-row border border-gray-500 items-center mt-16 mb-4 gap-8 lg:gap-16 p-8">
+          <div className="flex flex-col gap-8 rounded-lg w-full  text-center p-8 order-3 lg:order-2">
+            <div className="flex flex-col  gap-3">
+              <div className="text-5xl font-serif">OFERTA LIMITADA</div>
+
+              <div className="text-3xl  font-serif">
+                💰 Investimento único para garantir que a sua marca esteja
+                protegida para sempre
+              </div>
+            </div>
+            <div className="uppercase font-medium text-lg">
+              Tudo isso por apenas
+            </div>
+            <div
+              className="text-[#00D957] font-bold text-5xl"
+              style={{ marginTop: "-20px" }}
+            >
+              12x de R$ 68,92
+            </div>
+            <div
+              className="uppercase font-medium text-lg"
+              style={{ marginTop: "-20px" }}
+            >
+              ou R$ 827 à vista
+            </div>
+
+            <BuyButton3 />
+            <div className="flex justify-center">
+              <Image
+                src="/comprasegura3.png"
+                alt="selo de compra segura"
+                width={300}
+                height={200}
+              />
+            </div>
+            <div className="border-t border-gray-600 w-full my-4"></div>
+            <div className="text-xs text-white/75">
+              Compra 100% segura! Entraremos em contato imediatamente após a
+              confirmação do pagamento
+            </div>
           </div>
         </div>
       </div>
@@ -507,17 +550,20 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row justify-center mt-16 mb-4 gap-8 lg:gap-16">
         <div className="flex flex-col gap-8 w-full lg:w-3/5">
           <div className="text-3xl mb-4 flex">
-            <div className="uppercase">Três sessões de assessoria jurídica</div>
+            <div className="uppercase text-green-400">
+              BÔNUS: Três sessões de assessoria jurídica
+            </div>
           </div>
 
           <div className="text-xl font-light w-full lg:w-4/5">
-            Vamos também oferecer uma oportunidade única para obter assessoria
-            jurídica especializada e esclarecer todas as suas dúvidas.
+            Vamos também oferecer de forma totalmente gratuita uma oportunidade
+            única para receber assessoria jurídica especializada e esclarecer
+            todas as suas questões jurídicas.
           </div>
           <div className="text-xl font-light w-full lg:w-4/5">
-            Agende as reuniões no horário mais conveniente para você, não te
-            ajudaremos somente com sua marca mas também com qualquer outra
-            questão jurídica que você tenha.
+            Isso mesmo, você leu corretamente! Agende as três reuniões no
+            horário mais conveniente para você. Vamos te ajudar não só com a sua
+            marca, mas também com qualquer outra dúvida jurídica que você tenha.
           </div>
         </div>
 
