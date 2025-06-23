@@ -576,7 +576,38 @@ export default function Home() {
           />
         </div>
       </div>
-
+      <div
+        className="flex justify-center items-center flex-col gap-8 mt-16 mb-8"
+        style={{ backgroundColor: "#101010" }}
+      >
+        <div className="text-center text-4xl lg:w-3/5 font-light">
+          EXPERIMENTE PRIMEIRO. DECIDA DEPOIS.
+        </div>
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-4xl p-8 bg-gray-900 border border-gray-700 rounded-lg">
+          <div className="flex flex-col gap-6 text-center lg:text-left lg:w-2/3">
+            <div className="text-2xl font-light">
+              Se por qualquer motivo você não ficar 100% satisfeito com nosso
+              serviço, você tem 7 dias para solicitar o reembolso integral.
+            </div>
+            <div className="text-xl text-white/75">
+              Sem perguntas, sem complicações. Seu dinheiro de volta garantido.
+            </div>
+            <div className="text-lg text-green-400 font-medium">
+              ⭐ Você não tem nada a perder, mas tudo a ganhar!
+            </div>
+            <BuyButton3 />
+          </div>
+          <div className="flex justify-center w-full lg:w-auto">
+            <Image
+              src="/garantia7dias.png"
+              alt="garantia de 7 dias"
+              width={200}
+              height={200}
+              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]"
+            />
+          </div>
+        </div>
+      </div>
       <div className="text-3xl mt-16 mb-12">
         <span className="text-[#52edb3] mr-3">|</span>CLIENTES JÁ ATENDIDOS
       </div>
