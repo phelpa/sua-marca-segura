@@ -80,11 +80,11 @@ export default function Home() {
               oficial no INPI
             </h2>
 
-            <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 sm:gap-8 w-full sm:w-auto">
+            <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 sm:gap-8 w-full ">
               <InpiIcon className="w-64 h-14 sm:w-auto sm:h-auto" />
               <BuyButton4
                 title="QUERO REGISTRAR MINHA MARCA NO INPI"
-                className="min-w-[200px] text-sm sm:text-base"
+                className="min-w-[200px] text-sm sm:text-xl"
               />
             </div>
 
