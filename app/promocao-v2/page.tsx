@@ -72,7 +72,7 @@ export default function Home() {
                 alt="Jade Marcas Icon"
                 width={260}
                 height={90}
-                className="mb-2 w-48 sm:w-64 lg:w-auto"
+                className="mb-2 w-48 sm:w-64 lg:w-[260px]"
               />
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl w-full mt-4 font-light leading-tight">
@@ -80,8 +80,8 @@ export default function Home() {
               oficial no INPI
             </h2>
 
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-auto">
-              <InpiIcon className="w-16 h-16 sm:w-auto sm:h-auto" />
+            <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 sm:gap-8 w-full sm:w-auto">
+              <InpiIcon className="w-64 h-14 sm:w-auto sm:h-auto" />
               <BuyButton4
                 title="QUERO REGISTRAR MINHA MARCA NO INPI"
                 className="min-w-[200px] text-sm sm:text-base"
@@ -93,7 +93,7 @@ export default function Home() {
                 Proteja sua marca por 10 anos com o registro no INPI, realizado
                 por especialistas de forma rápida e simples.
               </span>
-              <span className="block text-green-600 font-semibold">
+              <span className="block text-green-500 ">
                 O único registro de marca com pesquisa de viabilidade ilimitada
                 e assessoria jurídica para qualquer dúvida.
               </span>
@@ -427,23 +427,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-6 lg:mt-8 mb-6 lg:mb-8 px-4 sm:px-8">
-        <InpiIcon
-          className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto"
-          style={{ marginLeft: "-42px" }}
-        />
-        <div
-          className="text-2xl sm:text-3xl lg:text-4xl mx-2 sm:mx-4"
-          style={{ marginLeft: "-24px" }}
-        >
-          +
-        </div>
+      <div className="flex justify-center items-center mt-12 mb-12 px-4 sm:px-8">
+        <InpiIcon className="lg:w-[220px]" />
+        <div className="text-2xl sm:text-3xl lg:text-4xl mx-2 sm:mx-4">+</div>
         <Image
           src="/jademarcas2.svg"
           alt="Jade Marcas Icon"
-          width={260}
-          height={90}
-          className="mb-2 w-32 sm:w-48 lg:w-auto"
+          width={180}
+          height={150}
+          className="mb-2 lg:w-[220px]"
         />
       </div>
 
