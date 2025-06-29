@@ -617,7 +617,7 @@ export default function Home() {
           o registro de marca. Entre em contato conosco pelo WhatsApp!
         </div>
         <a
-          href="https://wa.me/5511999999999?text=Olá! Tenho dúvidas sobre o registro de marca. Pode me ajudar?"
+          href={`https://wa.me/5515991349679?text=Olá! Tenho dúvidas sobre o registro de marca. Pode me ajudar?`}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-lg text-lg lg:text-xl flex items-center gap-2 lg:gap-3 transition-colors duration-200"
