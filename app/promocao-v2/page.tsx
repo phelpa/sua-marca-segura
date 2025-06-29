@@ -10,6 +10,7 @@ import { CocaColaLogo } from "../icons/coca-cola-logo";
 import { BuyButton4 } from "../components/buy-button4";
 import { IfoodIcon } from "../icons/ifood-icon";
 import { NetflixLogo } from "../icons/netflix-logo";
+import { SevenDaysIcon } from "../icons/seven-days";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -188,7 +189,7 @@ export default function Home() {
         className="flex justify-center pt-4 lg:pt-8 px-4 sm:px-8"
       >
         <Image
-          src="/grafico6.png"
+          src="/grafico8.png"
           alt="gráfico da sua empresa com a marca registrada"
           width={1100}
           height={500}
@@ -578,7 +579,7 @@ export default function Home() {
         className="flex justify-center items-center flex-col gap-6 lg:gap-8 mt-8 lg:mt-16 mb-6 lg:mb-8 px-4 sm:px-8"
         style={{ backgroundColor: "#101010" }}
       >
-        <div className="text-center text-2xl sm:text-3xl lg:text-4xl w-full lg:w-3/5 font-light">
+        <div className="text-center text-2xl sm:text-3xl lg:text-4xl w-full lg:w-3/5 font-light pt-4">
           EXPERIMENTE PRIMEIRO. DECIDA DEPOIS.
         </div>
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 max-w-4xl p-4 lg:p-8 bg-gray-900 border border-gray-700 rounded-lg w-full">
@@ -596,13 +597,7 @@ export default function Home() {
             <BuyButton3 />
           </div>
           <div className="flex justify-center w-full lg:w-auto">
-            <Image
-              src="/garantia7dias.png"
-              alt="garantia de 7 dias"
-              width={200}
-              height={200}
-              className="w-24 h-24 sm:w-32 sm:h-32 lg:w-[200px] lg:h-[200px]"
-            />
+            <SevenDaysIcon className="text-green-400" />
           </div>
         </div>
       </div>
