@@ -128,21 +128,21 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full">
           <div className="w-full flex-col lg:w-2/5 flex gap-4 lg:gap-8 flex-wrap justify-center lg:justify-start items-center lg:items-start lg:pl-8 relative">
             <div className="flex gap-8">
-              <McDonaldsLogo className="w-20 h-20 sm:w-32 sm:h-32 lg:w-40 lg:h-40" />
-              <StarbucksLogo className="w-20 h-20 sm:w-32 sm:h-32 lg:w-40 lg:h-40" />
+              <McDonaldsLogo className="w-32 h-20 sm:h-32 lg:w-40 lg:h-40" />
+              <StarbucksLogo className="w-32 h-20 sm:h-32 lg:w-40 lg:h-40" />
             </div>
             <div className="flex gap-8">
-              <CocaColaLogo className="w-40 h-12 sm:w-60 sm:h-18 lg:w-80 lg:h-24" />
+              <CocaColaLogo className="w-40 h-20 sm:w-60 sm:h-18 lg:w-80 lg:h-24" />
             </div>
             <div className="flex gap-8 mb-2">
-              <IfoodIcon className="w-20 h-20 sm:w-32 sm:h-32 lg:w-40 lg:h-40" />
-              <NetflixLogo className="w-20 h-20 sm:w-32 sm:h-32 lg:w-40 lg:h-40" />
+              <IfoodIcon className="w-24 h-20 sm:h-32 lg:w-40 lg:h-40" />
+              <NetflixLogo className="w-32 h-20 sm:h-32 lg:w-40 lg:h-40" />
             </div>
-            <div className="font-serif absolute bottom-0 left-0 pl-2 text-sm sm:text-base lg:text-lg ">
+            <div className="font-serif absolute bottom-[-20px] left-0 pl-2 text-sm sm:text-base lg:text-lg ">
               Todas as marcas que você conhece são registradas no INPI
             </div>
           </div>
-          <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-3/5">
+          <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-3/5 mt-2">
             <div className="text-xl sm:text-2xl lg:text-3xl font-serif">
               Se você pesquisou por registro de marca e encontrou essa página, é
               com <span className="text-green-700">você mesmo</span> que eu
