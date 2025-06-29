@@ -76,7 +76,7 @@ export default function Home() {
                 className="mb-2 w-48 sm:w-64 lg:w-[260px]"
               />
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl w-full mt-4 font-light leading-tight">
+            <h2 className="text-4xl sm:text-3xl lg:text-4xl xl:text-5xl w-full mt-4 font-light leading-tight">
               A partir de agora, sua marca estará protegida com o registro
               oficial no INPI
             </h2>
@@ -268,32 +268,38 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex mt-8 lg:mt-16 mb-4 gap-6 lg:gap-16 justify-center px-4 sm:px-8">
+      <div
+        className="flex mt-8 lg:mt-16 mb-4 gap-6 lg:gap-16 justify-center px-4 sm:px-8 bg-white text-gray-900 py-8 lg:py-12"
+        style={{
+          fontFamily: '"Stolzl", "Stolzl Placeholder", sans-serif',
+          fontWeight: 400,
+        }}
+      >
         <div className="flex flex-col gap-8 lg:gap-12 w-full lg:w-3/5">
-          <div className="text-2xl sm:text-3xl uppercase text-green-400">
+          <div className="text-2xl sm:text-3xl uppercase text-green-800">
             🔎 PESQUISA ILIMITADA DE VIABILIDADE DE MARCA
           </div>
 
-          <div className="text-lg sm:text-xl lg:text-2xl font-light w-full">
+          <div className="text-lg sm:text-xl lg:text-2xl  w-full text-gray-800">
             Para sempre vamos pesquisar se o nome que você quer usar já pertence
             a outra pessoa. Você vai poder solicitar quantas pesquisas quiser,
             para qualquer nome, sempre que precisar.
           </div>
-          <div className="text-lg sm:text-xl lg:text-2xl font-light w-full">
+          {/* <div className="text-lg sm:text-xl lg:text-2xl  w-full text-gray-800">
             Sabemos que a sua empresa vai crescer e que outras idéias e nomes
             podem aparecer e toda vez que isso acontecer vamos estar a
             disposição para fazer uma pesquisa completa da viabilidade desse
             nome.
-          </div>
-          <div className="text-lg sm:text-xl lg:text-2xl font-light w-full">
+          </div> */}
+          <div className="text-lg sm:text-xl lg:text-2xl  w-full text-gray-800">
             Já pensou em fazer essa pesquisa sozinho? Não é fácil ou simples.
           </div>
 
-          <div className="text-lg sm:text-xl lg:text-2xl font-light w-full">
+          <div className="text-lg sm:text-xl lg:text-2xl  w-full text-gray-800">
             Com toda a nossa experiência em marcas vamos fazer isso para você.
             Vamos te ajudar a encontrar o nome perfeito para o seu negócio e
             garantir que esse nome seja seu.{" "}
-            <span className="text-lg sm:text-xl lg:text-2xl font-light underline decoration-green-700 text-green-400">
+            <span className="text-lg sm:text-xl lg:text-2xl  underline decoration-green-800 text-green-800">
               Lembrando que isso é para sempre!
             </span>
           </div>
@@ -422,7 +428,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center items-center flex-col gap-8 lg:gap-16 mt-8 lg:mt-16 px-4 sm:px-8">
-        <div className="text-center text-2xl sm:text-3xl lg:text-4xl w-full lg:w-3/5 font-light">
+        <div className="text-center text-3xl sm:text-4xl lg:text-4xl w-full lg:w-3/5 font-light text-green-400">
           Quanto você pagaria para proteger tudo que você construiu e vai
           construir pelos próximos 10 anos?
         </div>
