@@ -143,7 +143,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-3/5 mt-2">
-            <div className="text-xl sm:text-2xl lg:text-3xl font-serif">
+            <div className="text-2xl lg:text-3xl font-serif py-4 lg:py-0">
               Se você pesquisou por registro de marca e encontrou essa página, é
               com <span className="text-green-700">você mesmo</span> que eu
               quero conversar.
@@ -502,9 +502,7 @@ export default function Home() {
         <div className="flex w-full lg:w-3/5 flex-col lg:flex-row border border-gray-500 items-center mt-8 lg:mt-16 mb-4 gap-6 lg:gap-16 p-4 lg:p-8">
           <div className="flex flex-col gap-6 lg:gap-8 rounded-lg w-full text-center p-4 lg:p-8 order-3 lg:order-2">
             <div className="flex flex-col gap-2 lg:gap-3">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-serif">
-                OFERTA LIMITADA
-              </div>
+              <div className="text-3xl font-serif">OFERTA LIMITADA</div>
 
               <div className="text-xl sm:text-2xl lg:text-3xl font-serif">
                 💰 Investimento único para garantir que a sua marca esteja
