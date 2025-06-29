@@ -269,7 +269,7 @@ export default function Home() {
       </div>
 
       <div
-        className="flex mt-8 lg:mt-16 mb-4 gap-6 lg:gap-16 justify-center px-4 sm:px-8 bg-white text-gray-900 py-8 lg:py-12"
+        className="flex mt-8 lg:mt-16 mb-4 gap-6 lg:gap-16 justify-center px-4 sm:px-8 bg-[#f5f5f5] text-gray-900 py-8 lg:py-12"
         style={{
           fontFamily: '"Stolzl", "Stolzl Placeholder", sans-serif',
           fontWeight: 400,
@@ -582,7 +582,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="flex justify-center items-center flex-col gap-6 lg:gap-8 mt-8 lg:mt-16 mb-6 lg:mb-8 px-4 sm:px-8"
+        className="flex justify-center items-center flex-col gap-6 lg:gap-8 mt-8 lg:mt-16 mb-6 lg:mb-8 px-4 sm:px-8 pb-4"
         style={{ backgroundColor: "#101010" }}
       >
         <div className="text-center text-2xl sm:text-3xl lg:text-4xl w-full lg:w-3/5 font-light pt-4">
