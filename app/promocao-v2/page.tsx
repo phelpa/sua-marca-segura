@@ -144,7 +144,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-3/5 mt-2">
-            <div className="text-2xl lg:text-3xl font-serif py-4 lg:py-0">
+            <div className="text-2xl lg:text-4xl font-serif py-4 lg:py-0">
               Se você pesquisou por registro de marca e encontrou essa página, é
               com <span className="text-green-700">você mesmo</span> que eu
               quero conversar.
