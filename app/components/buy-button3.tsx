@@ -11,7 +11,7 @@ export function BuyButton3({
 }) {
   return (
     <a
-      href="https://jade-marcas.pay.yampi.com.br/r/TU1ZPZWXG3"
+      href="https://sun.eduzz.com/40Q3175K0B"
       target="_blank"
       rel="noopener noreferrer"
     >

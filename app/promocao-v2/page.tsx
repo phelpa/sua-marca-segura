@@ -523,13 +523,19 @@ export default function Home() {
               className="text-[#00D957] font-bold text-3xl sm:text-4xl lg:text-5xl"
               style={{ marginTop: "-20px" }}
             >
-              12x de R$ 68,92
+              12x de R$ 84,53
             </div>
             <div
               className="uppercase font-medium text-base sm:text-lg"
               style={{ marginTop: "-20px" }}
             >
               ou R$ 827 à vista
+            </div>
+            <div
+              className="text-xs text-white/75"
+              style={{ marginTop: "-20px" }}
+            >
+              *Não inclui as taxas do INPI
             </div>
 
             <BuyButton3 />
