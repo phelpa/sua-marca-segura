@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 import { keywords } from "../components/keywords";
 import { XIcon } from "../icons/x-icon";
 import { JadeCheckedIcon } from "../icons/jade-checked-icon";
@@ -60,6 +61,18 @@ const jsonLd = {
 export default function Home() {
   return (
     <div className="text-white bg-gray-950 min-h-screen bg-cover bg-center">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16845087666"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16845087666');
+        `}
+      </Script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
