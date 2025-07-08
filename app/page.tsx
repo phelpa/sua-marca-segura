@@ -9,6 +9,7 @@ import { JadeCheckedIcon } from "./icons/jade-checked-icon";
 import { BuyButton } from "./components/buy-button";
 import { BuyButton2 } from "./components/buy-button2";
 import { WhatsappButton } from "./components/whatsapp-button";
+import Script from "next/script";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -58,6 +59,18 @@ const jsonLd = {
 export default function Home() {
   return (
     <div className="text-white">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16845087666"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16845087666');
+        `}
+      </Script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
