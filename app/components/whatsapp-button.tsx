@@ -5,7 +5,7 @@ declare const fbq: (event: string, action: string) => void;
 import { WhatsAppIcon } from "../icons/whatsapp-icon";
 
 const textWhatsApp =
-  "Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20benef%C3%ADcios%20em%20ter%20uma%20marca%20registrada";
+  "Ol%C3%A1%2C%20tenho%20interesse%20em%20registrar%20minha%20marca%20e%20gostaria%20de%20come%C3%A7ar";
 
 const sendToWhatsApp = `https://wa.me/5515991349679?text=${textWhatsApp}`;
 
