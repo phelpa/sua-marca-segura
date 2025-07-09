@@ -104,8 +104,8 @@ export default function Home() {
 
             <h2 className="text-lg sm:text-xl lg:text-2xl w-full mt-4 text-white">
               <span className="block mb-2">
-                Proteja sua marca por 10 anos com o registro no INPI, realizado
-                por especialistas de forma rápida e simples.
+                Registro de marca por 10 anos no INPI, realizado por advogados
+                experientes com acompanhamento jurídico completo.
               </span>
               <span className="block text-green-500 ">
                 O único registro de marca com pesquisa de viabilidade ilimitada
@@ -121,13 +121,23 @@ export default function Home() {
                 "radial-gradient(circle closest-side, #0d6b48 10%, rgb(3, 7, 18) 100%)",
             }}
           >
-            <Image
-              src="/jademelhorada.png"
-              alt="Jade Helpa, a advogada da Jade Marcas"
-              width={420}
-              height={220}
-              className="mb-2 w-64 sm:w-80 lg:w-[420px] h-auto"
-            />
+            <div className="flex flex-col items-center">
+              <Image
+                src="/jademelhorada.png"
+                alt="Jade Helpa, a advogada da Jade Marcas"
+                width={420}
+                height={220}
+                className="mb-2 w-64 sm:w-80 lg:w-[420px] h-auto"
+              />
+              <span
+                className="text-center text-base sm:text-lg lg:text-xl mt-2 text-white font-serif italic tracking-wide"
+                style={{
+                  textShadow: "0 0 10px rgba(82, 237, 179, 0.3)",
+                }}
+              >
+                Advogada Jade, especialista em registro de marcas
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -580,8 +590,8 @@ export default function Home() {
 
           <div className="text-base sm:text-lg lg:text-xl font-light w-full lg:w-4/5">
             Vamos também oferecer de forma totalmente gratuita uma oportunidade
-            única para receber assessoria jurídica especializada e esclarecer
-            todas as suas questões jurídicas.
+            única para receber assessoria jurídica e esclarecer todas as suas
+            questões por nossa equipe de advogados.
           </div>
           <div className="text-base sm:text-lg lg:text-xl font-light w-full lg:w-4/5">
             Isso mesmo, você leu corretamente! Agende as três reuniões no
